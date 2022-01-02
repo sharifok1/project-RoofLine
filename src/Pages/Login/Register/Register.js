@@ -12,9 +12,10 @@ import useAuth from "../../Hooks/useAuth";
 import Header from "../../Shared/Header/Header";
 
 const Register = () => {
+  const { createAccount, isLoading,user, authError } = useAuth()
   const [loginData, setLoginData] = useState({});
   const history = useNavigate();
-  const { user, registerUser, isLoading, authError } = useAuth();
+ 
 
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -25,13 +26,15 @@ const Register = () => {
   };
 
   const handleRegisterSubmit = (e) => {
-    if (loginData.password !== loginData.password2) {
+    e.preventDefault();
+    if(loginData.password !== loginData.password2) {
       alert("Your password did not match");
-      return;
+      return handleRegisterSubmit;
     }
-    registerUser(loginData.email, loginData.password, loginData.name, history);
+    createAccount(loginData.email,loginData.password,loginData.name, history)
     document.getElementById("Form").reset();
     e.preventDefault();
+    console.log(loginData)
   };
 
   return (
