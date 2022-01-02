@@ -5,8 +5,14 @@ const HomeProjects = () => {
     <div>
       <div className="container my-5">
         <div className="row">
-          <h4 className="text-center text_orange">Recent projects</h4>
-          <h2 className="text-center">Expected A Great Experience</h2>
+          <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+            <div className="section-title text-center pos-rel mb-75">
+              <h1>Projects</h1>
+              <span> Recent projects</span>
+              <h2>Expected A Great Experience</h2>
+            </div>
+          </div>
+
           <div className="img-container">
             <img
               className="img-fluid"

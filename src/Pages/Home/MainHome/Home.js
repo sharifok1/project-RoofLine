@@ -21,7 +21,7 @@ const Home = () => {
       <HomeProjects />
       <HomeProgress />
       <HomeTeamMembers />
-      <HomeBlogs />
+      {/* <HomeBlogs /> */}
       <Footer />
     </div>
   );
