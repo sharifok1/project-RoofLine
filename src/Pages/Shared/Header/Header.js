@@ -5,7 +5,7 @@ import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
 
 const Header = () => {
-  const {user}=useAuth()
+  const {user,logout}=useAuth()
   console.log(user.email)
   return (
     <div>
@@ -52,20 +52,20 @@ const Header = () => {
                   </a>
                 </li>
               </ul>
-              <Link
-                style={{ color: "#f15743", textDecoration: "none" }}
-                to="/login"
-              >
+
                 {
-                  user?
+                  user.email?
                   <div>
                     {user.email}
-                    <button>Log out</button>
-                  
-                  </div>: <SvgButton className="banner-description">Login</SvgButton>
+                    <button onClick={logout}>Log out</button>
+                  </div>
+                   : 
+                   <Link style={{ color: "#f15743", textDecoration: "none" }}
+                   to="/login"
+                 ><SvgButton className="banner-description">Login</SvgButton>
+                 </Link>
                 }
-               
-              </Link>
+                
             </div>
           </div>
         </nav>
