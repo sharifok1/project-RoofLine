@@ -68,6 +68,7 @@
 }
 a {
   text-decoration: none;
+  color: #111;
 }
 .grey-bg {
   background: #f3f1f2;
@@ -80,4 +81,7 @@ a {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.pt-175 {
+  padding-top: 175px;
 }
