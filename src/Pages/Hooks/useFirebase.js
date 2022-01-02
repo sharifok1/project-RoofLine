@@ -36,7 +36,7 @@ const useFirebase = () => {
         userData(user.email, user.displayName, "PUT");
         setAuthError("");
         const destination = location?.state?.from || "/";
-        // history.replace(destination);
+        history.replace(destination);
         history('/');
       })
       .catch((error) => {
@@ -91,7 +91,7 @@ const useFirebase = () => {
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const destination = location?.state?.from || "/";
+        // const destination = location?.state?.from || "/";
         history('/');
         setAuthError("");
       })
@@ -119,6 +119,7 @@ const useFirebase = () => {
 
   // For Logout
   const logout = () => {
+    alert('You are going to logout!!!')
     setIsLoading(true);
     signOut(auth)
       .then(() => {
