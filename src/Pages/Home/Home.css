@@ -172,7 +172,96 @@
 .mb-80 {
   margin-bottom: 80px;
 }
-
+.services-img {
+  overflow: hidden;
+  position: relative;
+}
+.services-text {
+  border: none;
+}
+.services-text h4 {
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.services-text p {
+  margin-bottom: 30px;
+}
+.services-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9;
+}
+.services-icon > a:hover {
+  background: linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  border-color: #f15743;
+}
+.services-icon > a {
+  font-size: 18px;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #a98c8b;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.about-title {
+  overflow: hidden;
+}
+.about-info {
+  margin-right: 23px;
+}
+.about-02-img {
+  margin-right: 30px;
+}
+.about-info h2 {
+  color: #f15743;
+  font-size: 85px;
+  line-height: 0.8;
+  margin-bottom: 0;
+}
+.about-img {
+  margin-left: -40px;
+  margin-right: 60px;
+  position: relative;
+}
+.abouts-icon i {
+  font-size: 24px;
+  color: #ffffff;
+}
+.abouts-text h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+.elementor img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.abouts-text {
+  position: absolute;
+  bottom: -24px;
+  padding: 38px 40px 108px 68px;
+  background: linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+  right: -1px;
+}
 @media only screen and (min-width: 300px) and (max-width: 991px) {
   .process-bg-img {
     background-size: cover;
