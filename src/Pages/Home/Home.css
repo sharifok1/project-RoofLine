@@ -108,7 +108,6 @@
   margin-top: 24px;
   line-height: 1.2;
 }
-<<<<<<< HEAD
 .process-wrapper {
   background: #ffffff;
   padding: 0 30px 45px;
@@ -164,15 +163,6 @@
 .mb-80 {
   margin-bottom: 80px;
 }
-
-@media only screen and (min-width: 300px) and (max-width: 991px) {
-  .process-bg-img {
-    background-size: cover;
-    height: 400px;
-    position: relative;
-    width: 100%;
-  }
-=======
 .services-img {
   overflow: hidden;
   position: relative;
@@ -211,5 +201,13 @@
   border-radius: 5px;
   display: inline-block;
   transition: 0.3s;
->>>>>>> b18c21d3ce792a0fd9076cbdb7f2d58c283c2da6
+}
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .process-bg-img {
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    width: 100%;
+  }
 }
