@@ -1,3 +1,4 @@
+import { Box } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
@@ -6,7 +7,7 @@ import "./Header.css";
 
 const Header = () => {
   const {user,logout}=useAuth()
-  console.log(user.email)
+  
   return (
     <div>
       <div className="container">
@@ -55,10 +56,13 @@ const Header = () => {
 
                 {
                   user.email?
-                  <div>
-                    {user.email}
-                    <button onClick={logout}>Log out</button>
-                  </div>
+                  <Box >
+                    <span style={{marginRight:'10px',fontWeight:'600'}}>
+                    {user.displayName}
+                    </span>
+                   
+                    <SvgButton className="banner-description" onClick={logout}>Log out</SvgButton>
+                  </Box>
                    : 
                    <Link style={{ color: "#f15743", textDecoration: "none" }}
                    to="/login"
