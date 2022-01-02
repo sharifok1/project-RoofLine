@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import SvgButton from "../SvgButton/SvgButton";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -6,9 +9,14 @@ const Header = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-              Navbar
-            </a>
+            <div class="logo">
+              <a href="https://shtheme.org/demosd/roofline/">
+                <img
+                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/logo.png"
+                  alt=""
+                />
+              </a>
+            </div>
             <button
               className="navbar-toggler"
               type="button"
@@ -27,12 +35,12 @@ const Header = () => {
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="/">
-                    Home
+                    HOME
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/">
-                    Link
+                    ABOUT
                   </a>
                 </li>
                 <li className="nav-item dropdown">
@@ -44,54 +52,16 @@ const Header = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
-                  </a>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link disabled"
-                    href="/"
-                    tabIndex="-1"
-                    aria-disabled="true"
-                  >
-                    Disabled
+                    SERVICES
                   </a>
                 </li>
               </ul>
-              <form className="d-flex">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
+              <Link
+                style={{ color: "#f15743", textDecoration: "none" }}
+                to="/login"
+              >
+                <SvgButton className="banner-description">Login</SvgButton>
+              </Link>
             </div>
           </div>
         </nav>
