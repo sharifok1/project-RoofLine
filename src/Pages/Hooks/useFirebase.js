@@ -37,7 +37,7 @@ const useFirebase = () => {
         setAuthError("");
         const destination = location?.state?.from || "/";
         // history.replace(destination);
-        history(destination);
+        history('/');
       })
       .catch((error) => {
         setAuthError(error.massage);
@@ -93,7 +93,7 @@ const useFirebase = () => {
       .then((userCredential) => {
         const destination = location?.state?.from || "/";
         // history.replace(destination);
-        history(destination);
+        history('/');
         setAuthError("");
       })
       .catch((error) => {
