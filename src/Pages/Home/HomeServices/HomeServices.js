@@ -20,7 +20,7 @@ const HomeServices = () => {
                   </a>
                   <div class="services-icon">
                     <a href="https://shtheme.org/demosd/roofline/?service=single-ply-roofing">
-                      <i class="far fa-angle-double-right"></i>
+                      <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const HomeServices = () => {
                   </a>
                   <div class="services-icon">
                     <a href="https://shtheme.org/demosd/roofline/?service=buildup-roofing">
-                      <i class="far fa-angle-double-right"></i>
+                      <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>
                 </div>
