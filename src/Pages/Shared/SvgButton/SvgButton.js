@@ -29,7 +29,7 @@ const CustomButtonRoot = styled(ButtonRoot)(
   overflow: visible;
   cursor: pointer;
   --main-color: ${
-    theme.palette.mode === "light" ? "rgb(25,118,210)" : "rgb(144,202,249)"
+    theme.palette.mode === "light" ? "rgb(241, 87, 67)" : "rgb(144,202,249)"
   };
   --hover-color: ${
     theme.palette.mode === "light"

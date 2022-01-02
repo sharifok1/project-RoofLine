@@ -73,7 +73,10 @@ const Login = () => {
 
           <div className="d-flex justify-content-center my-3">
             <Button type="submit">
-              <SvgButton className="text-info banner-description">
+              <SvgButton
+                style={{ color: "#f15743" }}
+                className="banner-description"
+              >
                 Login
               </SvgButton>
             </Button>
