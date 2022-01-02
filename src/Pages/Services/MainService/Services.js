@@ -1,11 +1,18 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
+import ServicesBanner from "../ServicesBanner/ServicesBanner";
+import ServiceExplore from "../ServicesExplore/ServiceExplore";
+import ServicesOffer from "../ServicesOffer/ServicesOffer";
 
 const Services = () => {
   return (
     <div>
-      <div>
-        <h2>This is Service Page.</h2>
-      </div>
+      <Header />
+      <ServicesBanner />
+      <ServiceExplore />
+      <ServicesOffer />
+      <Footer />
     </div>
   );
 };

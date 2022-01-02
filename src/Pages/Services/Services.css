@@ -1,0 +1,106 @@
+.ServiceBanner {
+  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/06.jpg");
+}
+.w-01 {
+  top: 14%;
+  left: 9%;
+  z-index: -1;
+}
+.w-02 {
+  bottom: 5%;
+  left: 3%;
+  z-index: -1;
+}
+.shape-item {
+  position: absolute;
+}
+.work-icon {
+  float: left;
+  margin-right: 20px;
+}
+.work-icon i {
+  color: #f15743;
+  font-size: 30px;
+}
+.work-text {
+  overflow: hidden;
+}
+.rotateme {
+  -webkit-animation-name: rotateme;
+  animation-name: rotateme;
+  -webkit-animation-duration: 10s;
+  animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.grey-3-bg {
+  background: #fef1f2;
+}
+.pb-130 {
+  padding-bottom: 130px;
+}
+.pt-125 {
+  padding-top: 125px;
+}
+.service-area {
+  background-repeat: no-repeat;
+}
+.services-02-wrapper {
+  background: #ffffff;
+  overflow: hidden;
+  padding: 35px 40px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.inner-02-services {
+  overflow: hidden;
+}
+.services-02-icon i {
+  color: #f15743;
+  font-size: 40px;
+  line-height: 1;
+}
+.services-02-text h4 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.services-02-text h4 > a {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #1e1e2a;
+  margin-top: 0;
+}
+.services-02-text p {
+  margin-bottom: 9px;
+}
+.services-02-text a {
+  color: #888888;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s;
+}
+.services-02-text a i {
+  color: #f15743;
+  padding-left: 6px;
+}
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+.f-left {
+  float: left;
+}
+.mr-35 {
+  margin-right: 25px;
+}
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .services-02-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: none;
+  }
+}
