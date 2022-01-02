@@ -1,3 +1,21 @@
 .text_orange {
   color: #d95543;
 }
+.c-btn {
+  backface-visibility: hidden;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  padding: 24px 33px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+  background: linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
