@@ -12,14 +12,14 @@ const HomeServices = () => {
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="services-wrapper mb-30">
                 <div class="services-img">
-                  <a href="https://shtheme.org/demosd/roofline/?service=single-ply-roofing">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/01-3.jpg"
                       alt=""
                     />
                   </a>
                   <div class="services-icon">
-                    <a href="https://shtheme.org/demosd/roofline/?service=single-ply-roofing">
+                    <a href="/">
                       <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>
@@ -40,14 +40,14 @@ const HomeServices = () => {
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="services-wrapper mb-30">
                 <div class="services-img">
-                  <a href="https://shtheme.org/demosd/roofline/?service=roofing-cleaning">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/02-1.jpg"
                       alt=""
                     />
                   </a>
                   <div class="services-icon">
-                    <a href="https://shtheme.org/demosd/roofline/?service=roofing-cleaning">
+                    <a href="/">
                       <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>
@@ -68,14 +68,14 @@ const HomeServices = () => {
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="services-wrapper mb-30">
                 <div class="services-img">
-                  <a href="https://shtheme.org/demosd/roofline/?service=buildup-roofing">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/03.jpg"
                       alt=""
                     />
                   </a>
                   <div class="services-icon">
-                    <a href="https://shtheme.org/demosd/roofline/?service=buildup-roofing">
+                    <a href="/">
                       <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>

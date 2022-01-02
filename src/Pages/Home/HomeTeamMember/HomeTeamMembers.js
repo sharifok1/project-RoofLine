@@ -18,7 +18,7 @@ const HomeTeamMembers = () => {
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="team-wrapper mb-60">
                 <div class="team-img">
-                  <a href="https://shtheme.org/demosd/roofline/?team=brandon-l-munger">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/01.jpg"
                       alt=""
@@ -41,9 +41,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="https://shtheme.org/demosd/roofline/?team=brandon-l-munger">
-                      Brandon L. Munger
-                    </a>
+                    <a href="/">Brandon L. Munger</a>
                   </h4>
                   <span>Roof Engineer</span>
                 </div>
@@ -52,7 +50,7 @@ const HomeTeamMembers = () => {
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="team-wrapper mb-60">
                 <div class="team-img">
-                  <a href="https://shtheme.org/demosd/roofline/?team=silva-dm-molikas">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02.jpg"
                       alt=""
@@ -75,9 +73,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="https://shtheme.org/demosd/roofline/?team=silva-dm-molikas">
-                      Silva DM. Molikas
-                    </a>
+                    <a href="/">Silva DM. Molikas</a>
                   </h4>
                   <span>Design Expert</span>
                 </div>
@@ -86,7 +82,7 @@ const HomeTeamMembers = () => {
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="team-wrapper mb-60">
                 <div class="team-img">
-                  <a href="https://shtheme.org/demosd/roofline/?team=michel-jhons-doe">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/03.jpg"
                       alt=""
@@ -109,9 +105,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="https://shtheme.org/demosd/roofline/?team=michel-jhons-doe">
-                      Michel Jhons Doe
-                    </a>
+                    <a href="/">Michel Jhons Doe</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>
@@ -120,7 +114,7 @@ const HomeTeamMembers = () => {
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="team-wrapper mb-60">
                 <div class="team-img">
-                  <a href="https://shtheme.org/demosd/roofline/?team=sokina-malika-sox">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/04.jpg"
                       alt=""
@@ -143,9 +137,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="https://shtheme.org/demosd/roofline/?team=sokina-malika-sox">
-                      Sokina Malika Sox
-                    </a>
+                    <a href="/">Sokina Malika Sox</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>

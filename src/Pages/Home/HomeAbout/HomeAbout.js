@@ -79,10 +79,7 @@ const HomeAbout = () => {
                   </ul>
                 </div>{" "}
                 <div class="about-button mt-25">
-                  <a
-                    class="c-btn border-btn"
-                    href="https://shtheme.org/demosd/roofline/?page_id=68"
-                  >
+                  <a class="c-btn border-btn" href="/about">
                     <span></span>
                     Read More<span></span>
                   </a>

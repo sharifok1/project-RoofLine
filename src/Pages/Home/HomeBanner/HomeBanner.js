@@ -54,11 +54,7 @@ const HomeBanner = () => {
                             data-delay="1.1s"
                             // style="animation-delay: 1.1s;"
                           >
-                            <a
-                              class="c-btn"
-                              href="https://shtheme.org/demosd/roofline/?page_id=70"
-                              tabindex="0"
-                            >
+                            <a class="c-btn" href="/" tabindex="0">
                               <span></span> Need Help <span></span>
                             </a>
                           </div>
