@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
             <div class="logo">
-              <a href="https://shtheme.org/demosd/roofline/">
+              <a href="/">
                 <img
                   src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/logo.png"
                   alt=""
@@ -39,7 +39,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a className="nav-link" href="/about">
                     ABOUT
                   </a>
                 </li>

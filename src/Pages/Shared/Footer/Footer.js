@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import SvgButton from "../SvgButton/SvgButton";
 import "./Footer.css";
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
                     href="/"
                   >
                     <img
-                      src="https://i.ibb.co/fd278Mz/Screenshot-21-removebg-preview.png"
+                      src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/logo.png"
                       className="img-fluid"
                       alt=""
                     />
@@ -37,7 +38,7 @@ const Footer = () => {
                   aria-describedby="basic-addon2"
                 />
                 <NavLink to="/commingSoon">
-                  <button className="btn-Car border-0">Subscribe</button>
+                  <button className="btn btn-outline-danger">Subscribe</button>
                 </NavLink>
               </div>
             </div>
@@ -117,8 +118,8 @@ const Footer = () => {
         </div>
         <div className="footerText">
           <p className="text-center mt-5">
-            © 2021 <span className="c-green">Carify</span> Designd By{" "}
-            <span className="c-green">Md Bayazid</span>.
+            © 2021 <span className="c-green">Roofline</span> Designd By{" "}
+            <span className="c-green">Md Bayazid & Shihab</span>.
           </p>
         </div>
       </div>
