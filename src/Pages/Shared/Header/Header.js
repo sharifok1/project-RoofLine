@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
 
 const Header = () => {
+  const {user}=useAuth()
+  console.log(user.email)
   return (
     <div>
       <div className="container">
@@ -53,7 +56,15 @@ const Header = () => {
                 style={{ color: "#f15743", textDecoration: "none" }}
                 to="/login"
               >
-                <SvgButton className="banner-description">Login</SvgButton>
+                {
+                  user?
+                  <div>
+                    {user.email}
+                    <button>Log out</button>
+                  
+                  </div>: <SvgButton className="banner-description">Login</SvgButton>
+                }
+               
               </Link>
             </div>
           </div>
