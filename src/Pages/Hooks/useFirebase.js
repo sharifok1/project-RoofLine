@@ -38,8 +38,8 @@ const useFirebase = () => {
 
         setAuthError("");
         const destination = location?.state?.from || "/";
-        history.replace(destination);
-        history("/");
+        history(destination);
+      
       })
       .catch((error) => {
         setAuthError(error.massage);
@@ -83,8 +83,8 @@ const useFirebase = () => {
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // const destination = location?.state?.from || "/";
-        history("/");
+        const destination = location?.state?.from || "/";
+        history(destination);
         setAuthError("");
       })
       .catch((error) => {

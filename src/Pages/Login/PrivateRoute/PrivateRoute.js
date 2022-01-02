@@ -5,7 +5,7 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const PrivetRoute = ({ children, ...rest }) => {
-  const { admin, user, isLoading } = useAuth();
+  const { user, isLoading } = useAuth();
   const location = useLocation();
   console.log("children", children);
   if (isLoading) {

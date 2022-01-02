@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ServicesOffer = () => {
-  return (
-    <div>
-      <div class="service-area grey-3-bg pt-125 pb-130">
-        <div class="container">
+  const [service, setServices]=useState()
+  useEffect(()=>{
+    const url ='http://localhost:5000/services'
+    fetch(url)
+    .then(res => res.json())
+    .then(data =>setServices(data))
+    },[])
+    console.log(service)
+    return (
+        <div>
+          <div class="container">
           <div class="row">
             <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
               <div class="section-title text-center pos-rel mb-75">
@@ -137,6 +144,10 @@ const ServicesOffer = () => {
             </div>
           </div>
         </div>
+    
+      
+      <div class="service-area grey-3-bg pt-125 pb-130">
+        
       </div>
     </div>
   );
