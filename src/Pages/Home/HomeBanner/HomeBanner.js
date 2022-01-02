@@ -13,8 +13,6 @@ const HomeBanner = () => {
             >
               <div
                 class="single-slider slider-height d-flex align-items-center slick-slide slick-current slick-active home-banner-bg"
-                // data-background="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/01.jpg"
-                // style='background-image: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/01.jpg"); width: 1903px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;'
                 tabindex="0"
                 data-slick-index="0"
                 aria-hidden="false"

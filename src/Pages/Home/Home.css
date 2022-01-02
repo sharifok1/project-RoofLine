@@ -38,6 +38,15 @@
 .hero-text p {
   margin-right: 130px;
 }
+.hero-slider-caption p::before {
+  position: absolute;
+  height: 42px;
+  width: 3px;
+  content: "";
+  background: #f15743;
+  left: 0;
+  top: 6px;
+}
 .HomeWeDo {
   background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02-1.jpg");
   background-position: center;
@@ -108,7 +117,6 @@
   margin-top: 24px;
   line-height: 1.2;
 }
-<<<<<<< HEAD
 .process-wrapper {
   background: #ffffff;
   padding: 0 30px 45px;
@@ -172,44 +180,4 @@
     position: relative;
     width: 100%;
   }
-=======
-.services-img {
-  overflow: hidden;
-  position: relative;
-}
-.services-text {
-  border: none;
-}
-.services-text h4 {
-  font-size: 22px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-.services-text p {
-  margin-bottom: 30px;
-}
-.services-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9;
-}
-.services-icon > a:hover {
-  background-image: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
-  background-image: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
-  background-image: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
-  border-color: #f15743;
-}
-.services-icon > a {
-  font-size: 18px;
-  color: #ffffff;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: 2px solid #a98c8b;
-  border-radius: 5px;
-  display: inline-block;
-  transition: 0.3s;
->>>>>>> b18c21d3ce792a0fd9076cbdb7f2d58c283c2da6
 }
