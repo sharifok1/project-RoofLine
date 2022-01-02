@@ -6,8 +6,8 @@ import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
 
 const Header = () => {
-  const {user,logout}=useAuth()
-  
+  const { user, logout } = useAuth();
+
   return (
     <div>
       <div className="container">
@@ -52,24 +52,31 @@ const Header = () => {
                     SERVICE
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/dashboard">
+                    DASHBOARD
+                  </a>
+                </li>
               </ul>
 
-                {
-                  user.email?
-                  <Box >
-                    <span style={{marginRight:'10px',fontWeight:'600'}}>
+              {user.email ? (
+                <Box>
+                  <span style={{ marginRight: "10px", fontWeight: "600" }}>
                     {user.displayName}
-                    </span>
-                   
-                    <SvgButton className="banner-description" onClick={logout}>Log out</SvgButton>
-                  </Box>
-                   : 
-                   <Link style={{ color: "#f15743", textDecoration: "none" }}
-                   to="/login"
-                 ><SvgButton className="banner-description">Login</SvgButton>
-                 </Link>
-                }
-                
+                  </span>
+
+                  <SvgButton className="banner-description" onClick={logout}>
+                    Log out
+                  </SvgButton>
+                </Box>
+              ) : (
+                <Link
+                  style={{ color: "#f15743", textDecoration: "none" }}
+                  to="/login"
+                >
+                  <SvgButton className="banner-description">Login</SvgButton>
+                </Link>
+              )}
             </div>
           </div>
         </nav>
