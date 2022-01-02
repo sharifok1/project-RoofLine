@@ -10,9 +10,68 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 750px;
+  /* height: 750px; */
 }
 .img-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3px;
+  /* grid-auto-flow: dense; */
+}
+.img-container img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+.vertical {
+  grid-row: auto / span 2;
+}
+.horizontal {
+  grid-column: auto / span 1;
+}
+.process-bg-img {
+  background-size: cover;
+  height: 100%;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  background-position: center center;
+}
+.pos-rel {
+  position: relative;
+}
+.process-bg-img {
+  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/03-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.process-bg-02 {
+  padding-top: 125px;
+}
+.section-title h1 {
+  position: absolute;
+  z-index: 1;
+  font-size: 80px;
+  line-height: 1;
+  opacity: 0.09;
+  top: -30px;
+  left: 0;
+  margin-bottom: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  text-transform: capitalize;
+  right: 0;
+}
+.section-title > span {
+  color: #f15743;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.section-title h2 {
+  font-size: 48px;
+  margin-top: 24px;
+  line-height: 1.2;
 }
