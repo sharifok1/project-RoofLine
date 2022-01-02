@@ -1,0 +1,144 @@
+.pt-140 {
+  padding-top: 140px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.AboutBanner {
+  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/06.jpg");
+}
+.breadcrumb-area {
+  background-size: cover;
+  background-position: center center;
+}
+.breadcrumb-text h1 {
+  color: #ffffff;
+  font-size: 75px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.breadcrumb-menu {
+  background: #ffffff;
+  display: inline-block;
+  padding: 30px 56px;
+  transform: translateY(45px);
+  box-shadow: 0px 10px 60px 0px rgb(221 221 221 / 57%);
+  border-radius: 50px;
+}
+.breadcrumb-menu li {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
+.breadcrumb-menu li a {
+  color: #1e1e2a;
+  font-size: 26px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+.breadcrumb-menu22::before {
+  content: "\f054";
+  display: inline-block;
+  padding-bottom: 0;
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  font-family: fontAwesome;
+  color: #1e1e2a;
+  font-size: 20px;
+}
+.breadcrumb-menu li span {
+  color: #f15743;
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+.shape-item {
+  position: absolute;
+}
+.ab-03 {
+  bottom: 10%;
+  left: 7%;
+}
+.rotateme {
+  -webkit-animation-name: rotateme;
+  animation-name: rotateme;
+  -webkit-animation-duration: 10s;
+  animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.ab-04 {
+  top: 23%;
+  right: 10%;
+  z-index: -1;
+}
+.about-us-text p {
+  position: relative;
+  padding-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+}
+.about-us-text p::before {
+  position: absolute;
+  content: "";
+  background: #f15743;
+  height: 40px;
+  width: 4px;
+  left: 0;
+  top: 8px;
+}
+.about-us-text a {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #f15743;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #f15743;
+  transition: 0.3s;
+  display: inline-block;
+}
+.about-us-text a i {
+  padding-left: 5px;
+}
+.fa-long-arrow-right:before {
+  content: "\f178";
+  font-family: fontAwesome;
+}
+.history-img {
+  margin-left: 45px;
+}
+.history-img img {
+  width: 100%;
+}
+.skills-2-single .knob {
+  color: #1e1e2a !important;
+  font-size: 30px !important;
+}
+.section-info {
+  margin-bottom: 0;
+  margin-right: 40px;
+  color: #6a6a6a;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 26px;
+}
+.section-info::before {
+  position: absolute;
+  content: "";
+  background: #f15743;
+  height: 44px;
+  width: 4px;
+  left: 0;
+  top: 7px;
+}
+.skills-2-single {
+  display: inline-block;
+  text-align: center;
+}
