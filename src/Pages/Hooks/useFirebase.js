@@ -19,7 +19,7 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [authError, setAuthError] = useState("");
-  // const [admin, setAdmin] = useState(false);
+  const [admin, setAdmin] = useState(false);
   const [token, setToken] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [firebaseError, setFirebaseError] = useState("");
@@ -60,6 +60,7 @@ const useFirebase = () => {
 
       //save use to the database-------------------saveduser
       savedUser(email, name, 'POST')
+      console.log(email,name)
       //update profile
       updateProfile(auth.currentUser, {
         displayName: name
@@ -76,22 +77,7 @@ const useFirebase = () => {
     )
   }
 
-  // Save User Information
-  const savedUser=(email,displayName, method)=>{
-    const users = {email, displayName};
-    console.log(users)
-    const url='http://localhost:5000/userCollection'
-    fetch(url,{
-      method:method,
-      headers:{
-          'content-type':'application/JSON'
-       },
-       body:JSON.stringify(user)
-    })
-    .then(res=>{
-
-    })
-  }
+  
   // Login user with Email Password
   const loginUser = (email, password, location, history) => {
     setIsLoading(true);
@@ -136,12 +122,28 @@ const useFirebase = () => {
       })
       .finally(() => setIsLoading(false));
   };
+  // Save User Information
+  const savedUser=(email,displayName, method)=>{
+    const users = {email, displayName};
+  
+    const url='http://localhost:5000/userCollection'
+    fetch(url,{
+      method:method,
+      headers:{
+          'content-type':'application/JSON'
+       },
+       body:JSON.stringify(users)
+    })
+    .then(res=>{
 
-  // useEffect(() => {
-  //   fetch(`http://localhost:5000.com/users/${user.email}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setAdmin(data.admin));
-  // }, [user.email]);
+    })
+  }
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/${user.email}`)
+      .then((res) => res.json())
+      .then((data) => setAdmin(data.admin));
+  }, [user.email]);
   return {
     user,
     signInWithGoogle,
@@ -152,7 +154,7 @@ const useFirebase = () => {
     firebaseError,
     loginUser,
     logout,
-    // admin,
+    admin,
     token,
   };
 };
