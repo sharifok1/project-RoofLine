@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../Home.css";
 
 const HomeBanner = () => {
@@ -9,7 +10,7 @@ const HomeBanner = () => {
           <div class="slick-list draggable">
             <div
               class="slick-track"
-              // style="opacity: 1; width: 1903px;"
+            // style="opacity: 1; width: 1903px;"
             >
               <div
                 class="single-slider slider-height d-flex align-items-center slick-slide slick-current slick-active home-banner-bg"
@@ -26,7 +27,7 @@ const HomeBanner = () => {
                             data-animation="fadeInUp"
                             data-delay=".4s"
                             class=""
-                            // style="animation-delay: 0.4s;"
+                          // style="animation-delay: 0.4s;"
                           >
                             <i class="flaticon-support"></i> Services &amp;
                             Repairs
@@ -35,7 +36,7 @@ const HomeBanner = () => {
                             data-animation="fadeInUp"
                             data-delay=".6s"
                             class=""
-                            // style="animation-delay: 0.6s;"
+                          // style="animation-delay: 0.6s;"
                           >
                             Roofing Contractors
                           </h2>
@@ -43,7 +44,7 @@ const HomeBanner = () => {
                             data-animation="fadeInUp"
                             data-delay=".8s"
                             class=""
-                            // style="animation-delay: 0.8s;"
+                          // style="animation-delay: 0.8s;"
                           >
                             Sed perspi ciatis unde omnis iste natus error sitvo
                             accusantium doloremque laudantium
@@ -52,11 +53,11 @@ const HomeBanner = () => {
                             class="slider-button mt-35"
                             data-animation="fadeInUp"
                             data-delay="1.1s"
-                            // style="animation-delay: 1.1s;"
+                          // style="animation-delay: 1.1s;"
                           >
-                            <a class="c-btn" href="/" tabindex="0">
+                            <Link to="/contact" class="c-btn" tabindex="0">
                               <span></span> Need Help <span></span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -66,12 +67,12 @@ const HomeBanner = () => {
                         class="slider-img"
                         data-animation="fadeInRight"
                         data-delay="1.3s"
-                        // style="animation-delay: 1.3s;"
+                      // style="animation-delay: 1.3s;"
                       >
                         <img
                           src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/01.png"
                           alt=""
-                          // style="    margin-top: 50px;"
+                        // style="    margin-top: 50px;"
                         />
                       </div>
                     </div>
