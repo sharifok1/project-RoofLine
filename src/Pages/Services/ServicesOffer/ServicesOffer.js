@@ -9,11 +9,13 @@ const ServicesOffer = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://arcane-oasis-37685.herokuapp.com/products")
+      .get("http://localhost:5000/services")
       .catch((err) => {
         console.log("error", err);
       });
-    dispatch(setProducts(response.data));
+    dispatch(setProducts(response.data.result));
+    
+    console.log(response.data.result)
   };
   useEffect(() => {
     fetchProducts();
