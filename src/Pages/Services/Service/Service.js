@@ -20,41 +20,6 @@ const Service = () => {
       img3,
     } = product;
     return (
-      // <div key={_id} className="col">
-      //   <div>
-      //     <div className="card shadow" style={{ minHeight: "450px" }}>
-      //       <div
-      //         style={{ minHeight: "215px" }}
-      //         className="d-flex justify-content-center align-items-center"
-      //       >
-      //         <img src={image1} className="card-img img-fluid p-1" alt="..." />
-      //       </div>
-      //       <div className="card-body border-top">
-      //         <h5>${product_price}</h5>
-      //         <h6 className="card-title">{product_name?.slice(0, 50)} ...</h6>
-      //         <Rating
-      //           style={{ fontSize: "15px" }}
-      //           name="half-rating-read"
-      //           value={`${rating}`}
-      //           precision={0.5}
-      //           readOnly
-      //         />
-      //       </div>
-      //       <Link
-      //         className="fw-bold"
-      //         style={{ textDecoration: "none", color: "goldenrod" }}
-      //         to={`/details/${_id}`}
-      //       >
-      //         <div
-      //           className="text-center py-2"
-      //           style={{ backgroundColor: "#dbe3e3" }}
-      //         >
-      //           <i className="fas fa-info-circle"></i> Detail
-      //         </div>
-      //       </Link>
-      //     </div>
-      //   </div>
-      // </div>
       <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
         <div class="services-02-wrapper mb-30">
           <div class="services-02-img f-left mr-35">
