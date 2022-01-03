@@ -1,15 +1,24 @@
 import { Rating } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const Service = () => {
+  const [serviceCount, setServiceCount] = useState();
   const { receivePageNum } = useAuth();
+  const url = "http://localhost:5000/services";
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setServiceCount(data));
+    console.log(serviceCount?.count);
+  }, [!serviceCount]);
   const products = useSelector((state) => state.allProducts.products);
   const size = 4;
   // console.log(products.length);
-  const pageNumber = Math.ceil(products.length / size);
+  const pageNumber = Math.ceil(serviceCount?.count / size);
 
   console.log(products.length);
   receivePageNum(pageNumber);

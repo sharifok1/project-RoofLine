@@ -6,13 +6,13 @@ import useAuth from "../../Hooks/useAuth";
 import Service from "../Service/Service";
 
 const ServicesOffer = () => {
-  const [page,setPage] = useState(0); //mush
-  const size = 4 //must
+  const [page, setPage] = useState(0); //mush
+  const size = 4; //must
   const products = useSelector((state) => state);
   const { pageCount } = useAuth();
- 
+
   const dispatch = useDispatch();
- 
+
   const fetchProducts = async () => {
     const response = await axios
       .get(`http://localhost:5000/services?page=${page}&&size=${size}`)
@@ -20,8 +20,8 @@ const ServicesOffer = () => {
         console.log("error", err);
       });
     dispatch(setProducts(response.data.result));
-    
-    // console.log(pageNumber);
+
+    // console.log(response.data.count);
   };
 
   useEffect(() => {
@@ -46,17 +46,17 @@ const ServicesOffer = () => {
         <div class="row">
           <div class="col-xl-12">
             <div class="services-button text-center mt-30">
-              {
-                [...Array(pageCount).keys()]
-                .map(number =><
-                  button  class="c-btn"
-                  className={number === page ? 'selected' : 'c-btn'}
+              {[...Array(pageCount).keys()].map((number) => (
+                <button
+                  class="c-btn"
+                  className={number === page ? "selected" : "c-btn"}
                   key={number}
-                  onClick={()=>setPage(number)}
-                >{number}
-                </button>)
-              }
-             
+                  onClick={() => setPage(number)}
+                >
+                  {number}
+                  {console.log(number)}
+                </button>
+              ))}
             </div>
           </div>
         </div>
