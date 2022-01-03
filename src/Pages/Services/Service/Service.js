@@ -9,15 +9,15 @@ const Service = () => {
   const renderList = showAbleProducts.map((product) => {
     const {
       _id,
-      product_name,
-      product_price,
-      brand,
-      sereen_size,
+      name,
+      title,
+      details,
+      details2,
       rating,
       review,
-      cpu,
-      detail,
-      image1,
+      img1,
+      img2,
+      img3,
     } = product;
     return (
       // <div key={_id} className="col">
@@ -58,7 +58,7 @@ const Service = () => {
       <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
         <div class="services-02-wrapper mb-30">
           <div class="services-02-img f-left mr-35">
-            <img className="img-fluid" src={image1} alt="" />
+            <img className="img-fluid" src={img1} alt="" />
           </div>
           <div class="inner-02-services">
             <div class="services-02-icon">
