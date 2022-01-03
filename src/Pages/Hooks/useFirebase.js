@@ -23,6 +23,7 @@ const useFirebase = () => {
   const [token, setToken] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [firebaseError, setFirebaseError] = useState("");
+  const [pageCount, setPageCount] = useState();
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
@@ -39,7 +40,6 @@ const useFirebase = () => {
         setAuthError("");
         const destination = location?.state?.from || "/";
         history(destination);
-      
       })
       .catch((error) => {
         setAuthError(error.massage);
@@ -58,26 +58,23 @@ const useFirebase = () => {
         const newUser = { email, displayName: name };
         setUser(newUser);
 
-      //save use to the database-------------------saveduser
-      savedUser(email, name, 'POST')
-      console.log(email,name)
-      //update profile
-      updateProfile(auth.currentUser, {
-        displayName: name
-      }).then(() => {
-       
-      }).catch((error) => {
-      }); 
-      history('/')
-    })
-    .catch((error) => {
-      setFirebaseError(error.message);
-    })
-    .finally(()=> setIsLoading(false)
-    )
-  }
+        //save use to the database-------------------saveduser
+        savedUser(email, name, "POST");
+        console.log(email, name);
+        //update profile
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        })
+          .then(() => {})
+          .catch((error) => {});
+        history("/");
+      })
+      .catch((error) => {
+        setFirebaseError(error.message);
+      })
+      .finally(() => setIsLoading(false));
+  };
 
-  
   // Login user with Email Password
   const loginUser = (email, password, location, history) => {
     setIsLoading(true);
@@ -123,27 +120,27 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
   // Save User Information
-  const savedUser=(email,displayName, method)=>{
-    const users = {email, displayName};
-  
-    const url='http://localhost:5000/userCollection'
-    fetch(url,{
-      method:method,
-      headers:{
-          'content-type':'application/JSON'
-       },
-       body:JSON.stringify(users)
-    })
-    .then(res=>{
+  const savedUser = (email, displayName, method) => {
+    const users = { email, displayName };
 
-    })
-  }
+    const url = "http://localhost:5000/userCollection";
+    fetch(url, {
+      method: method,
+      headers: {
+        "content-type": "application/JSON",
+      },
+      body: JSON.stringify(users),
+    }).then((res) => {});
+  };
 
   useEffect(() => {
     fetch(`http://localhost:5000/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
+  const receivePageNum = (num) => {
+    setPageCount(num);
+  };
   return {
     user,
     signInWithGoogle,
@@ -156,6 +153,8 @@ const useFirebase = () => {
     logout,
     admin,
     token,
+    receivePageNum,
+    pageCount,
   };
 };
 

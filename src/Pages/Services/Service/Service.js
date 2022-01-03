@@ -2,14 +2,17 @@ import { Rating } from "@mui/material";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const Service = () => {
+  const { receivePageNum } = useAuth();
   const products = useSelector((state) => state.allProducts.products);
 
   console.log(products.length);
   const pageNumber = Math.ceil(products.length / 4);
 
   console.log(pageNumber);
+  receivePageNum(pageNumber);
 
   const renderList = products.map((product) => {
     const {
