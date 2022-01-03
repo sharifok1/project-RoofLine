@@ -87,6 +87,12 @@ const Header = () => {
                   >
                     DASHBOARD
                   </NavLink>
+                  <NavLink
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                    to="/career"
+                  >
+                    CAREER
+                  </NavLink>
                 </li>
               </ul>
 
