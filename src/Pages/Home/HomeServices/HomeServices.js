@@ -1,6 +1,23 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setProducts } from "../../../redux/actions/productActions";
+import HomeServiceCard from "./HomeServiceCard";
 
 const HomeServices = () => {
+  const products = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const fetchProducts = async () => {
+    const response = await axios
+      .get("https://arcane-oasis-37685.herokuapp.com/products")
+      .catch((err) => {
+        console.log("error", err);
+      });
+    dispatch(setProducts(response.data));
+  };
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   return (
     <div>
       <div className="py-5">
@@ -9,7 +26,7 @@ const HomeServices = () => {
           <span>WHAT WE OFFER</span>
           <h2>We Provides Awesome Roofling Solutions</h2>
           <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6">
+            {/* <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="services-wrapper mb-30">
                 <div class="services-img">
                   <a href="/">
@@ -91,7 +108,8 @@ const HomeServices = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <HomeServiceCard></HomeServiceCard>
           </div>
         </div>
       </div>

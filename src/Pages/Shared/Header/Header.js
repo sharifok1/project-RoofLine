@@ -70,7 +70,11 @@ const Header = () => {
                     {user.displayName}
                   </span>
 
-                  <SvgButton className="banner-description" onClick={logout}>
+                  <SvgButton
+                    style={{ color: "#f15743" }}
+                    className="banner-description"
+                    onClick={logout}
+                  >
                     Log out
                   </SvgButton>
                 </Box>
