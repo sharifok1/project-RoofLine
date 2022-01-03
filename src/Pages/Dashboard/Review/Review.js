@@ -27,7 +27,7 @@ const Review = () => {
           : "https://christopherscottedwards.com/wp-content/uploads/2018/07/Generic-Profile.jpg"
       }`,
     };
-    fetch("http://localhost:5000.com/reviews", {
+    fetch("http://localhost:5000/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -46,8 +46,9 @@ const Review = () => {
       });
 
     e.preventDefault();
+    console.log(reviewData)
   };
-
+ 
   return (
     <div>
       <div>

@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
@@ -53,9 +53,9 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/dashboard">
+                  <NavLink to ="/dashboard" className="nav-link">
                     DASHBOARD
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
 

@@ -33,11 +33,13 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        userData(user.email, user.displayName, "PUT");
+
+        savedUser(user.email, user.displayName, "PUT");
+
         setAuthError("");
         const destination = location?.state?.from || "/";
-        history.replace(destination);
-        history("/");
+        history(destination);
+      
       })
       .catch((error) => {
         setAuthError(error.massage);
@@ -56,41 +58,33 @@ const useFirebase = () => {
         const newUser = { email, displayName: name };
         setUser(newUser);
 
-        //save use to the database-------------------saveduser
-        // savedUser(email, name, 'POST')
-        //update profile
-        updateProfile(auth.currentUser, {
-          displayName: name,
-        })
-          .then(() => {})
-          .catch((error) => {});
-        history.replace("/");
-      })
-      .catch((error) => {
-        setFirebaseError(error.message);
-      })
-      .finally(() => setIsLoading(false));
-  };
+      //save use to the database-------------------saveduser
+      savedUser(email, name, 'POST')
+      console.log(email,name)
+      //update profile
+      updateProfile(auth.currentUser, {
+        displayName: name
+      }).then(() => {
+       
+      }).catch((error) => {
+      }); 
+      history('/')
+    })
+    .catch((error) => {
+      setFirebaseError(error.message);
+    })
+    .finally(()=> setIsLoading(false)
+    )
+  }
 
-  // Save User Information
-  const userData = (email, displayName, method) => {
-    const user = { email, displayName };
-    fetch("http://localhost:5000.com/users", {
-      method: method,
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(user),
-    }).then();
-  };
-
+  
   // Login user with Email Password
   const loginUser = (email, password, location, history) => {
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // const destination = location?.state?.from || "/";
-        history("/");
+        const destination = location?.state?.from || "/";
+        history(destination);
         setAuthError("");
       })
       .catch((error) => {
@@ -128,9 +122,25 @@ const useFirebase = () => {
       })
       .finally(() => setIsLoading(false));
   };
+  // Save User Information
+  const savedUser=(email,displayName, method)=>{
+    const users = {email, displayName};
+  
+    const url='http://localhost:5000/userCollection'
+    fetch(url,{
+      method:method,
+      headers:{
+          'content-type':'application/JSON'
+       },
+       body:JSON.stringify(users)
+    })
+    .then(res=>{
+
+    })
+  }
 
   useEffect(() => {
-    fetch(`http://localhost:5000.com/users/${user.email}`)
+    fetch(`http://localhost:5000/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

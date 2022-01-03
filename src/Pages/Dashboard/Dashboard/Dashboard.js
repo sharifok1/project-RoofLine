@@ -18,7 +18,6 @@ import Typography from "@mui/material/Typography";
 import { Link, Route, Routes, useLocation, useParams } from "react-router-dom";
 import AddAProduct from "../AddAProduct/AddAProduct";
 import Dashboard from "./Dashboard";
-import useAuth from "../../Hooks/useAuth";
 import AdminRoute from "../../Login/AdminRoute/AdminRoute";
 import MyOrders from "../MyOrders/MyOrders";
 import ManageProducts from "../ManageProducts/ManageProducts";
@@ -26,6 +25,7 @@ import Pay from "../Pay/Pay";
 import Review from "../Review/Review";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import ManageAllOrders from "../ManageAllOrders/ManageAllOrders";
+import useAuth from "../../Hooks/useAuth";
 
 const drawerWidth = 210;
 
@@ -34,7 +34,8 @@ function ResponsiveDrawer(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   let path = useLocation();
   console.log(path);
-  const { admin, logout } = useAuth();
+  const {user, admin, logout } = useAuth();
+  console.log(admin, user.displayName)
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
