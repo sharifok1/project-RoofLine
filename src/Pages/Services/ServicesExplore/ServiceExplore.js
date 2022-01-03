@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../../redux/actions/productActions";
+import Service from "../Service/Service";
 
 const ServiceExplore = () => {
   const products = useSelector((state) => state);
@@ -117,23 +118,9 @@ const ServiceExplore = () => {
                       </div>
                     </div>
                   </div>
-                  {/* {services.map((service) => (
-                    <div className="col-xl-6 col-lg-6 col-md-6 mb-30">
-                      <div className="single-work">
-                        <div className="work-icon">
-                          <i className="fas fa-sun"></i>
-                        </div>
-                        <div className="work-text">
-                          <h4>Maintenance</h4>
-                          <p>
-                            Quis autem eprehen de in oluptate velit esseuam
-                            nihil molestiae conse
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))} */}
                 </div>
+
+                <Service></Service>
               </div>
             </div>
           </div>
