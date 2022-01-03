@@ -7,11 +7,11 @@ import useAuth from "../../Hooks/useAuth";
 const Service = () => {
   const { receivePageNum } = useAuth();
   const products = useSelector((state) => state.allProducts.products);
+  const size = 4;
+  // console.log(products.length);
+  const pageNumber = Math.ceil(products.length / size);
 
   console.log(products.length);
-  const pageNumber = Math.ceil(products.length / 4);
-
-  console.log(pageNumber);
   receivePageNum(pageNumber);
 
   const renderList = products.map((product) => {
@@ -27,7 +27,7 @@ const Service = () => {
       img2,
       img3,
     } = product;
-    console.log(pageNumber);
+    // console.log(pageNumber);
     return (
       <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
         <div class="services-02-wrapper mb-30">
