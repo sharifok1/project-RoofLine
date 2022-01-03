@@ -1,5 +1,18 @@
+import { easeQuadInOut } from "d3-ease";
 import React from "react";
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import AnimatedProgressProvider from "./AnimatedProgressProvider";
 
+<AnimatedProgressProvider
+  valueStart={0}
+  valueEnd={69}
+  duration={1.4}
+  easingFunction={easeQuadInOut}
+></AnimatedProgressProvider>
+    // {(value) => {
+    //    const roundedValue = Math.round(value);
+    //   }}
 const AboutServices = () => {
   return (
     <div>
@@ -29,39 +42,31 @@ const AboutServices = () => {
                           }}
                         >
                           <canvas width="126" height="126"></canvas>
-                          <input
-                            type="text"
-                            class="knob"
-                            value="0"
-                            data-rel="69"
-                            data-linecap="round"
-                            data-width="126"
-                            data-height="126"
-                            data-bgcolor="#e5e5e5"
-                            data-fgcolor="#f15743"
-                            data-thickness=".15"
-                            data-readonly="true"
-                            disabled=""
-                            readonly="readonly"
-                            style={{
-                              width: "67px",
-                              height: "42px",
-                              position: "absolute",
-                              verticalAlign: "middle",
-                              marginTop: "42px",
-                              marginLeft: "-96px",
-                              border: "0px",
-                              background: "none",
-                              font: "bold 25px Arial",
-                              textAlign: "center",
-                              color: "rgb(241, 87, 67)",
-                              padding: "0px",
-                              appearance: "none",
-                            }}
-                          />
+                         
+                          
+                          
                         </div>
                       </div>
-                      <div class="skills-content">
+                      <div class="skills-content" style={{marginTop:'-70px'}}>
+                      <div style={{ width: 80, height: 80 ,marginLeft:'20px'}}>
+                          <CircularProgressbar
+                          styles={buildStyles({
+                            pathColor: `rgba(255, 10, 0, ${69 / 100})`,
+                            textColor: '#f88',
+                            trailColor: '#d6d6d6',
+                            backgroundColor: '#d6d6d6',
+                            pathTransitionDuration: 0.5,
+                            // rotation: 0.25,
+                          })}
+                          valueStart={0} valueEnd={69}
+                            value={69}
+                            text={`${69}%`}
+                           
+                            /* This is important to include, because if you're fully managing the
+                            animation yourself, you'll want to disable the CSS animation. */
+                          
+                          />
+                          </div>
                         <h4>
                           Repairs &amp; <br /> Maintenance
                         </h4>
@@ -79,39 +84,27 @@ const AboutServices = () => {
                           }}
                         >
                           <canvas width="126" height="126"></canvas>
-                          <input
-                            type="text"
-                            class="knob"
-                            value="0"
-                            data-rel="83"
-                            data-linecap="round"
-                            data-width="126"
-                            data-height="126"
-                            data-bgcolor="#e5e5e5"
-                            data-fgcolor="#f15743"
-                            data-thickness=".15"
-                            data-readonly="true"
-                            disabled=""
-                            readonly="readonly"
-                            style={{
-                              width: "67px",
-                              height: "42px",
-                              position: "absolute",
-                              verticalAlign: "middle",
-                              marginTop: "42px",
-                              marginLeft: "-96px",
-                              border: "0px",
-                              background: "none",
-                              font: "bold 25px Arial",
-                              textAlign: "center",
-                              color: "#f15743",
-                              padding: "0px",
-                              appearance: "none",
-                            }}
-                          />
+                        
                         </div>
+
                       </div>
-                      <div class="skills-content">
+                      <div class="skills-content" style={{marginTop:'-70px'}}>
+                      <div style={{ width: 80, height: 80, marginLeft:'20px' }}>
+                          <CircularProgressbar
+                          styles={buildStyles({
+                            pathColor: `rgba(255, 10, 0, ${69 / 100})`,
+                            textColor: '#f88',
+                            trailColor: '#d6d6d6',
+                            backgroundColor: '#d6d6d6',
+                            pathTransitionDuration: 0.5,
+                            // rotation: 0.25,
+                          })}
+                          valueStart={0} valueEnd={83}
+                            value={83}
+                            text={`${83}%`}
+                          
+                          />
+                          </div>
                         <h4>
                           Best Online <br /> Support 24/7
                         </h4>
