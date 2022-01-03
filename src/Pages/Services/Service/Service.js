@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Service = () => {
   const products = useSelector((state) => state.allProducts.products);
-  const showAbleProducts = products.slice(0, 10);
-  const renderList = showAbleProducts.map((product) => {
+  // const showAbleProducts = products.slice(0, 10);
+  const renderList = products.map((product) => {
     const {
       _id,
       name,

@@ -13,7 +13,9 @@ const ServicesOffer = () => {
       .catch((err) => {
         console.log("error", err);
       });
-    dispatch(setProducts(response.data));
+    dispatch(setProducts(response.data.result));
+    
+    console.log(response.data.result)
   };
   useEffect(() => {
     fetchProducts();
