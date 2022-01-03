@@ -56,12 +56,12 @@ const Career = () => {
                     variant="h5"
                     gutterBottom
                 >
-                    Add New Product
+                    CAREER
                 </Typography>
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Product Name"
+                    label="Name"
                     name="product_name"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -69,7 +69,7 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Product Price"
+                    label="Email"
                     name="product_price"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -77,7 +77,7 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Brand"
+                    label="Experience Year"
                     name="brand"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -85,7 +85,7 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Screen Size"
+                    label="Work Place"
                     name="screen_size"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -93,7 +93,7 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Rating"
+                    label="Location"
                     name="rating"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -101,7 +101,7 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="Review"
+                    label="Image Url"
                     name="review"
                     onBlur={handleOnBlur}
                     variant="standard"
@@ -109,47 +109,15 @@ const Career = () => {
                 <TextField
                     sx={{ width: "95%", m: 1 }}
                     id="standard-basic"
-                    label="CPU"
+                    label="Work Name"
                     name="cpu"
                     onBlur={handleOnBlur}
                     variant="standard"
                 />
                 <TextField
                     sx={{ width: "95%", m: 1 }}
-                    id="standard-basic"
-                    label="Image url-1"
-                    name="image1"
-                    onBlur={handleOnBlur}
-                    variant="standard"
-                />
-                <TextField
-                    sx={{ width: "95%", m: 1 }}
-                    id="standard-basic"
-                    label="Image url-2"
-                    name="image2"
-                    onBlur={handleOnBlur}
-                    variant="standard"
-                />
-                <TextField
-                    sx={{ width: "95%", m: 1 }}
-                    id="standard-basic"
-                    label="Image url-3"
-                    name="image3"
-                    onBlur={handleOnBlur}
-                    variant="standard"
-                />
-                <TextField
-                    sx={{ width: "95%", m: 1 }}
-                    id="standard-basic"
-                    label="Image url-4"
-                    name="image4"
-                    onBlur={handleOnBlur}
-                    variant="standard"
-                />
-                <TextField
-                    sx={{ width: "95%", m: 1 }}
                     id="standard-multiline-static"
-                    label="Detail"
+                    label="Your Detail"
                     name="detail"
                     onBlur={handleOnBlur}
                     multiline
@@ -165,7 +133,7 @@ const Career = () => {
                     type="submit"
                     variant="contained"
                 >
-                    Add to Database
+                    Submit Your Application
                 </Button>
                 {/* {isLoading && <CircularProgress />} */}
             </form>
