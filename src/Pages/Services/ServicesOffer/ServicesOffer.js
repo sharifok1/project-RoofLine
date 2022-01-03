@@ -10,6 +10,8 @@ const ServicesOffer = () => {
   const size = 4; //must
   const products = useSelector((state) => state);
   const { pageCount } = useAuth();
+  const getCount = pageCount;
+  console.log(pageCount);
 
   const dispatch = useDispatch();
 
@@ -46,7 +48,7 @@ const ServicesOffer = () => {
         <div class="row">
           <div class="col-xl-12">
             <div class="services-button text-center mt-30">
-              {[...Array(pageCount).keys()].map((number) => (
+              {[...Array(getCount)?.keys()].map((number) => (
                 <button
                   class="c-btn"
                   className={number === page ? "selected" : "c-btn"}

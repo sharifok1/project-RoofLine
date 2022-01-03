@@ -18,10 +18,14 @@ const Service = () => {
   const products = useSelector((state) => state.allProducts.products);
   const size = 4;
   // console.log(products.length);
-  const pageNumber = Math.ceil(serviceCount?.count / size);
+  let pageNumber = 0;
+  if (serviceCount) {
+    pageNumber = Math.ceil(serviceCount.count / size);
+  }
 
   console.log(products.length);
   receivePageNum(pageNumber);
+  console.log(pageNumber);
 
   const renderList = products.map((product) => {
     const {
@@ -49,9 +53,9 @@ const Service = () => {
             </div>
             <div class="services-02-text">
               <h4>
-                <a href="/">Buildup Roofing</a>
+                <a href="/">{title}</a>
               </h4>
-              <p>
+              <p className="text-info">
                 But must explain to you how all this mistaken idea of denounce
               </p>
               <a href="/">
