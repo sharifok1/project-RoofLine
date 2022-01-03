@@ -163,6 +163,24 @@
   border-radius: 50%;
   margin-top: -70px;
 }
+.process-list li {
+  font-size: 15px;
+  color: #888888;
+  padding-bottom: 9px;
+  padding-left: 26px;
+  position: relative;
+  font-weight: 600;
+  font-family: "Mulish", sans-serif;
+}
+.process-list li::before {
+  position: absolute;
+  left: 0;
+  content: "\f00c";
+  font-family: fontAwesome;
+  top: 1px;
+  color: #f15743;
+  font-weight: 400;
+}
 .process-text {
   margin-top: 32px;
 }

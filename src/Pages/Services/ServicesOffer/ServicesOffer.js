@@ -1,6 +1,23 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setProducts } from "../../../redux/actions/productActions";
+import Service from "../Service/Service";
 
 const ServicesOffer = () => {
+  const products = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const fetchProducts = async () => {
+    const response = await axios
+      .get("https://arcane-oasis-37685.herokuapp.com/products")
+      .catch((err) => {
+        console.log("error", err);
+      });
+    dispatch(setProducts(response.data));
+  };
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   return (
     <div>
       <div class="container">
@@ -14,117 +31,7 @@ const ServicesOffer = () => {
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="services-02-wrapper mb-30">
-              <div class="services-02-img f-left mr-35">
-                <img
-                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/s-01.png"
-                  alt=""
-                />
-              </div>
-              <div class="inner-02-services">
-                <div class="services-02-icon">
-                  <i class="flaticon-roof-4"></i>
-                </div>
-                <div class="services-02-text">
-                  <h4>
-                    <a href="/">Single Ply Roofing</a>
-                  </h4>
-                  <p>
-                    But must explain to you how all this mistaken idea of
-                    denounce
-                  </p>
-                  <a href="/">
-                    Read More <i class="far fa-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="services-02-wrapper mb-30">
-              <div class="services-02-img f-left mr-35">
-                <img
-                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/s-02.png"
-                  alt=""
-                />
-              </div>
-              <div class="inner-02-services">
-                <div class="services-02-icon">
-                  <i class="flaticon-roof-3"></i>
-                </div>
-                <div class="services-02-text">
-                  <h4>
-                    <a href="/">Buildup Roofing</a>
-                  </h4>
-                  <p>
-                    But must explain to you how all this mistaken idea of
-                    denounce
-                  </p>
-                  <a href="/">
-                    Read More <i class="far fa-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="services-02-wrapper mb-30">
-              <div class="services-02-img f-left mr-35">
-                <img
-                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/s-03.png"
-                  alt=""
-                />
-              </div>
-              <div class="inner-02-services">
-                <div class="services-02-icon">
-                  <i class="flaticon-roof-2"></i>
-                </div>
-                <div class="services-02-text">
-                  <h4>
-                    <a href="/">Roofing Repairs</a>
-                  </h4>
-                  <p>
-                    But must explain to you how all this mistaken idea of
-                    denounce
-                  </p>
-                  <a href="/">
-                    Read More <i class="far fa-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="services-02-wrapper mb-30">
-              <div class="services-02-img f-left mr-35">
-                <img
-                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/s-04.png"
-                  alt=""
-                />
-              </div>
-              <div class="inner-02-services">
-                <div class="services-02-icon">
-                  <i class="flaticon-repair"></i>
-                </div>
-                <div class="services-02-text">
-                  <h4>
-                    <a href="/">Roofing Cleaning</a>
-                  </h4>
-                  <p>
-                    But must explain to you how all this mistaken idea of
-                    denounce
-                  </p>
-                  <a href="/">
-                    Read More <i class="far fa-long-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Service></Service>
         </div>
         <div class="row">
           <div class="col-xl-12">

@@ -1,0 +1,118 @@
+.ContactBanner {
+  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/06.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-address-wrapper {
+  padding: 0 15px 42px;
+}
+.mb-90 {
+  margin-bottom: 90px;
+}
+.pt-240 {
+  padding-top: 140px;
+}
+.contact-address-icon {
+  margin-bottom: 34px;
+}
+.contact-address-icon i {
+  height: 130px;
+  width: 130px;
+  line-height: 130px;
+  font-size: 45px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  margin-top: -71px;
+  border-radius: 50%;
+}
+.fa-map-marked-alt:before {
+  content: "\f5a0";
+}
+.contact-address-text h2 {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 23px;
+  padding-bottom: 27px;
+}
+.contact-address-text h2::before {
+  position: absolute;
+  content: "";
+  background: #ababb6;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.contact-address-text span {
+  color: #6a6a6a;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.contacts-icon {
+  position: relative;
+}
+.contacts-icon::after {
+  position: absolute;
+  content: "";
+  font-family: fontAwesome;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  right: 25px;
+  color: #f15743;
+  top: 22px;
+}
+.contacts-form input {
+  border: 2px solid #dcdcdc;
+  height: 70px;
+  margin-bottom: 30px;
+  padding: 0 28px;
+  width: 100%;
+  font-size: 15px;
+  color: #6a6a6a;
+  font-weight: 500;
+}
+.contactss-name::after {
+  content: "";
+}
+.contactss-email::after {
+  content: "";
+}
+.contactss-website::after {
+  content: "";
+}
+.contactss-message::after {
+  content: "";
+}
+.contacts-form textarea {
+  border: 2px solid #dcdcdc;
+  height: 170px;
+  margin-bottom: 30px;
+  padding: 28px;
+  width: 100%;
+  font-size: 15px;
+  color: #6a6a6a;
+  font-weight: 500;
+}
+.contact-area input.wpcf7-submit {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.c-btn:hover {
+  color: #ffffff;
+  transform: translateY(-5px);
+}

@@ -18,6 +18,7 @@ import Review from "./Pages/Dashboard/Review/Review";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import ManageProducts from "./Pages/Dashboard/ManageProducts/ManageProducts";
+import Contact from "./Pages/Contact/MianContact/Contact";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
           {/* <Route
             path="/productExplore"
