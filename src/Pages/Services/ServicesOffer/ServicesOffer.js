@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../../redux/actions/productActions";
 import useAuth from "../../Hooks/useAuth";
 import Service from "../Service/Service";
-
+//imported
 const ServicesOffer = () => {
   const [page,setPage] = useState(0); //mush
   const size = 4 //must
