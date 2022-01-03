@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../../redux/actions/productActions";
 import Service from "../Service/Service";
@@ -7,6 +7,8 @@ import Service from "../Service/Service";
 const ServicesOffer = () => {
   const products = useSelector((state) => state);
   const dispatch = useDispatch();
+  const [pageCount,setPageCount] = useState(0);
+  const [countNum,setCountNum]=useState()
   const fetchProducts = async () => {
     const response = await axios
       .get("http://localhost:5000/services")
@@ -14,9 +16,18 @@ const ServicesOffer = () => {
         console.log("error", err);
       });
     dispatch(setProducts(response.data.result));
-    
+    setCountNum(response.data.count);
     console.log(response.data.result)
+   
+    const pageNumber = Math.ceil(countNum/4);
+    setPageCount(pageNumber)
+    console.log(pageNumber)
+    // console.log(pageCount)
+
   };
+
+  
+
   useEffect(() => {
     fetchProducts();
   }, []);
