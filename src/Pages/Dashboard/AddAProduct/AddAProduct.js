@@ -58,7 +58,7 @@ const AddAProduct = () => {
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Product Name"
+          label="Service Name"
           name="product_name"
           onBlur={handleOnBlur}
           variant="standard"
