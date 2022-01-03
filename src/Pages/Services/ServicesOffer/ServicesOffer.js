@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const ServicesOffer = () => {
-  const [service, setServices]=useState()
-  useEffect(()=>{
-    const url ='http://localhost:5000/services'
-    fetch(url)
-    .then(res => res.json())
-    .then(data =>setServices(data))
-    },[])
-    console.log(service)
+ 
     return (
         <div>
           <div class="container">
