@@ -7,8 +7,8 @@ import Service from "../Service/Service";
 const ServicesOffer = () => {
   const products = useSelector((state) => state);
   const dispatch = useDispatch();
-  const [pageCount,setPageCount] = useState(0);
-  const [countNum,setCountNum]=useState()
+  const [pageCount, setPageCount] = useState(0);
+  const [countNum, setCountNum] = useState();
   const fetchProducts = async () => {
     const response = await axios
       .get("http://localhost:5000/services")
@@ -17,16 +17,13 @@ const ServicesOffer = () => {
       });
     dispatch(setProducts(response.data.result));
     setCountNum(response.data.count);
-    console.log(response.data.result)
-   
-    const pageNumber = Math.ceil(countNum/4);
-    setPageCount(pageNumber)
-    console.log(pageNumber)
+    console.log(response.data.result);
+
+    const pageNumber = Math.ceil(countNum / 4);
+    setPageCount(pageNumber);
+    console.log(pageNumber);
     // console.log(pageCount)
-
   };
-
-  
 
   useEffect(() => {
     fetchProducts();

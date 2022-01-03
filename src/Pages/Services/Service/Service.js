@@ -1,11 +1,16 @@
 import { Rating } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Service = () => {
   const products = useSelector((state) => state.allProducts.products);
-  // const showAbleProducts = products.slice(0, 10);
+
+  console.log(products.length);
+  const pageNumber = Math.ceil(products.length / 4);
+
+  console.log(pageNumber);
+
   const renderList = products.map((product) => {
     const {
       _id,
@@ -19,6 +24,7 @@ const Service = () => {
       img2,
       img3,
     } = product;
+    console.log(pageNumber);
     return (
       <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
         <div class="services-02-wrapper mb-30">

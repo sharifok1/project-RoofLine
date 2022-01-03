@@ -34,8 +34,8 @@ function ResponsiveDrawer(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   let path = useLocation();
   console.log(path);
-  const {user, admin, logout } = useAuth();
-  console.log(admin, user.displayName)
+  const { user, admin, logout } = useAuth();
+  console.log(admin, user.displayName);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -47,7 +47,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       {admin && (
         <List>
-          <Link style={{ textDecoration: "none", color: "#1c7876" }} to="/home">
+          <Link style={{ textDecoration: "none", color: "#f15245" }} to="/home">
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
@@ -59,33 +59,33 @@ function ResponsiveDrawer(props) {
 
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/manageProducts"
           >
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i className="fas fa-tasks"></i> Manage Products
+                  <i className="fas fa-tasks"></i> Manage Services
                 </span>
               </ListItemText>
             </ListItem>
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/addAProduct"
           >
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-cart-plus"></i> Add A Product
+                  <i class="fas fa-cart-plus"></i> Add A Service
                 </span>
               </ListItemText>
             </ListItem>
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/makeAdmin"
           >
             <ListItem button>
@@ -98,7 +98,7 @@ function ResponsiveDrawer(props) {
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/manageAllOrders"
           >
             <ListItem button>
@@ -115,7 +115,7 @@ function ResponsiveDrawer(props) {
         <List>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/home"
           >
             <ListItem button>
@@ -128,7 +128,7 @@ function ResponsiveDrawer(props) {
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/myOrders"
           >
             <ListItem button>
@@ -141,7 +141,7 @@ function ResponsiveDrawer(props) {
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/pay"
           >
             <ListItem button>
@@ -154,7 +154,7 @@ function ResponsiveDrawer(props) {
           </Link>
           <Link
             className="fw-bold"
-            style={{ textDecoration: "none", color: "#1c7876" }}
+            style={{ textDecoration: "none", color: "#f15245" }}
             to="/dashboard/review"
           >
             <ListItem button>
@@ -170,7 +170,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         <ListItem button onClick={logout}>
-          <ListItemText className="fw-bold" style={{ color: "#1c7876" }}>
+          <ListItemText className="fw-bold" style={{ color: "#f15245" }}>
             <span className="fw-bold">
               <i class="fas fa-sign-out-alt"></i> Logout
             </span>
@@ -189,7 +189,7 @@ function ResponsiveDrawer(props) {
       <AppBar
         position="fixed"
         sx={{
-          bgcolor: "#182222",
+          bgcolor: "#f6130061",
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
