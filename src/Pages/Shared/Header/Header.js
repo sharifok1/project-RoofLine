@@ -1,13 +1,21 @@
 import { Box } from "@mui/system";
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
-
+import { NavLink } from "react-router-dom";
 const Header = () => {
   const { user, logout } = useAuth();
-
+  let activeStyle = {
+    textDecoration: "none",
+    color: "#f15743",
+    padding: "5rem 1rem",
+  };
+  let navLink = {
+    color: "rgba(0,0,0,.55)",
+    padding: "5rem 1rem",
+  };
   return (
     <div>
       <div className="container">
@@ -38,27 +46,45 @@ const Header = () => {
             >
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <NavLink
+                    to="/"
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                  >
                     HOME
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/about">
+                  <NavLink
+                    to="/about"
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                  >
                     ABOUT
-                  </a>
+                  </NavLink>
+                  {/* <a className="nav-link" href="/about">
+                    ABOUT
+                  </a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/services">
+                  <NavLink
+                    to="/services"
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                  >
                     SERVICE
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/contact">
+                  <NavLink
+                    to="/contact"
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                  >
                     CONTACT
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/dashboard" className="nav-link">
+                  <NavLink
+                    style={({ isActive }) => (isActive ? activeStyle : navLink)}
+                    to="/dashboard"
+                  >
                     DASHBOARD
                   </NavLink>
                 </li>

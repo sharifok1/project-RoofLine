@@ -52,11 +52,11 @@ const ContactArea = () => {
                           <input
                             type="text"
                             name="names"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Your Full Name"
                           />
                         </span>
@@ -69,11 +69,11 @@ const ContactArea = () => {
                           <input
                             type="email"
                             name="email"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Your Email Address"
                           />
                         </span>
@@ -84,12 +84,12 @@ const ContactArea = () => {
                       <div class="contacts-icon contactss-website">
                         <span class="wpcf7-form-control-wrap phone">
                           <input
-                            type="text"
+                            type="number"
                             name="phone"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text"
-                            aria-invalid="false"
+                            // aria-invalid="false"
                             placeholder="Your Phone"
                           />
                         </span>
@@ -105,8 +105,8 @@ const ContactArea = () => {
                             rows="10"
                             class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                             id="comments"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Your Comments...."
                           ></textarea>
                         </span>

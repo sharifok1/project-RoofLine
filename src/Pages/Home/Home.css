@@ -387,6 +387,9 @@ ul li {
   margin-top: -52px;
   transition: 0.3s;
 }
+.team-wrapper:hover .team-icon {
+  margin-top: -32px;
+}
 .team-icon {
   background: #feeeec;
   padding: 8px 10px;
@@ -396,6 +399,9 @@ ul li {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+}
+.mb-60 {
+  margin-bottom: 60px;
 }
 .team-icon a {
   height: 36px;
