@@ -1,27 +1,44 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setProducts } from "../../../redux/actions/productActions";
+import Service from "../Service/Service";
 
 const ServiceExplore = () => {
+  const products = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const fetchProducts = async () => {
+    const response = await axios
+      .get("https://arcane-oasis-37685.herokuapp.com/products")
+      .catch((err) => {
+        console.log("error", err);
+      });
+    dispatch(setProducts(response.data));
+  };
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   return (
     <div>
-      <div class="work-area pt-175 pb-100 pos-rel">
-        <div class="shape d-none d-xl-block">
-          <div class="shape-item w-01">
+      <div className="work-area pt-175 pb-100 pos-rel">
+        <div className="shape d-none d-xl-block">
+          <div className="shape-item w-01">
             <img
               src="https://shtheme.org/demosd/roofline/wp-content/themes/roofline/assets/img/shape/12.png"
               alt=""
             />
           </div>
-          <div class="shape-item w-02 rotateme">
+          <div className="shape-item w-02 rotateme">
             <img
               src="https://shtheme.org/demosd/roofline/wp-content/themes/roofline/assets/img/shape/13.png"
               alt=""
             />
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6">
-              <div class="work-img mb-30">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 col-lg-6">
+              <div className="work-img mb-30">
                 <img
                   className="img-fluid"
                   src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/07-2.jpg"
@@ -29,14 +46,14 @@ const ServiceExplore = () => {
                 />
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6">
-              <div class="work-wrapper">
-                <div class="section-title pos-rel mb-25">
+            <div className="col-xl-6 col-lg-6">
+              <div className="work-wrapper">
+                <div className="section-title pos-rel mb-25">
                   <h1>Works</h1>
                   <span> what we do</span>
                   <h2>Explore About Our Roofing Core Features</h2>
                 </div>
-                <div class="about-us-info">
+                <div className="about-us-info">
                   <p>
                     But must explain to you how all this mistaken idea of
                     denouncing plea sure and praising pain was born and I will
@@ -44,13 +61,13 @@ const ServiceExplore = () => {
                     actual teachings of the great
                   </p>
                 </div>
-                <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-                    <div class="single-work">
-                      <div class="work-icon">
-                        <i class="fas fa-location"></i>
+                <div className="row">
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div className="single-work">
+                      <div className="work-icon">
+                        <i className="fas fa-location"></i>
                       </div>
-                      <div class="work-text">
+                      <div className="work-text">
                         <h4>Well Security</h4>
                         <p>
                           Quis autem eprehen de in oluptate velit esseuam nihil
@@ -59,12 +76,12 @@ const ServiceExplore = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-                    <div class="single-work">
-                      <div class="work-icon">
-                        <i class="fas fa-layer-group"></i>
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div className="single-work">
+                      <div className="work-icon">
+                        <i className="fas fa-layer-group"></i>
                       </div>
-                      <div class="work-text">
+                      <div className="work-text">
                         <h4>Professional</h4>
                         <p>
                           Quis autem eprehen de in oluptate velit esseuam nihil
@@ -73,12 +90,12 @@ const ServiceExplore = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-                    <div class="single-work">
-                      <div class="work-icon">
-                        <i class="fas fa-sun"></i>
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div className="single-work">
+                      <div className="work-icon">
+                        <i className="fas fa-sun"></i>
                       </div>
-                      <div class="work-text">
+                      <div className="work-text">
                         <h4>Maintenance</h4>
                         <p>
                           Quis autem eprehen de in oluptate velit esseuam nihil
@@ -87,12 +104,12 @@ const ServiceExplore = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
-                    <div class="single-work">
-                      <div class="work-icon">
-                        <i class="fas fa-umbrella-beach"></i>
+                  <div className="col-xl-6 col-lg-6 col-md-6 mb-30">
+                    <div className="single-work">
+                      <div className="work-icon">
+                        <i className="fas fa-umbrella-beach"></i>
                       </div>
-                      <div class="work-text">
+                      <div className="work-text">
                         <h4>Support 24/7</h4>
                         <p>
                           Quis autem eprehen de in oluptate velit esseuam nihil
@@ -102,6 +119,8 @@ const ServiceExplore = () => {
                     </div>
                   </div>
                 </div>
+
+                <Service></Service>
               </div>
             </div>
           </div>
