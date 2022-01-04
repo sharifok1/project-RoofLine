@@ -2,120 +2,63 @@ import React from "react";
 
 const HomeWeDo = () => {
   return (
-    <div className="HomeWeDo pt-35 mb-30">
-      <div class="skills-area pos-rel">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6">
-              <div class="skills-02-wrapper mt-30 mr-60">
-                <div class="section-title mr-20 pos-rel mb-50">
-                  <h1>Skills</h1>
-                  <span> What we do</span>
-                  <h2>Lot’s Experience In Roofing Services</h2>
-                  <p class="section-info">
-                    Quis autem vel eum iure repreahenderit quein ea voluptatey
-                    esse quam nihil molestiae consequatur, vel dolorem
-                  </p>
-                </div>
-                <div class="row">
-                  <div class="col-xl-5 col-lg-6 col-md-5 col-6">
-                    <div class="skills-2-single mb-30">
-                      <div class="progress-circular">
-                        <div
-                          style={{
-                            display: "inline",
-                            width: "126px",
-                            height: "126px",
-                          }}
-                        >
-                          <canvas width="126" height="126"></canvas>
-                          <input
-                            type="text"
-                            class="knob"
-                            value="0"
-                            data-rel="69"
-                            data-linecap="round"
-                            data-width="126"
-                            data-height="126"
-                            data-bgcolor="#e5e5e5"
-                            data-fgcolor="#f15743"
-                            data-thickness=".15"
-                            data-readonly="true"
-                            disabled=""
-                            readonly="readonly"
-                            style={{
-                              width: "67px",
-                              height: "42px",
-                              position: "absolute",
-                              verticalAlign: "middle",
-                              marginTop: "42px",
-                              marginLeft: "-96px",
-                              border: "0px",
-                              background: "none",
-                              font: "bold 25px Arial",
-                              textAlign: "center",
-                              color: "rgb(241, 87, 67)",
-                              padding: "0px",
-                              appearance: "none",
-                            }}
-                          />
-                        </div>
-                      </div>
-                      <div class="skills-content">
-                        <h4>
-                          Repairs &amp; <br /> Maintenance
-                        </h4>
+    <div className="HomeWeDo pt-35">
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-6 col-lg-6 d-flex align-items-end">
+            <div className="choose-img">
+              <img
+                src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/01.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="col-xl-6 col-lg-6 my-auto">
+            <div className="choose-wrapper mb-30">
+              <div className="section-title mr-20 pos-rel mb-35">
+                <h1>Why Us</h1>
+                <span> What We Do</span>
+                <h2>Why People Choose Our Roofline</h2>
+              </div>
+              <div className="choose-info">
+                <p>
+                  Sed ut perspiciati unde omnis iste natus error vaolupta temc
+                  ntium doloremque laudantium totam rem aperiam eaquepsu abillo
+                  inventore veritatis et quasi architecto beatae
+                </p>
+              </div>
+              <div className="choose-item choose-item-02">
+                <ul>
+                  <li>
+                    <div className="choose-icon f-left">
+                      <i className="fas fa-hospital-alt"></i>
+                      <div className="choose-tag">
+                        <i className="fas fa-check"></i>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-xl-5 col-lg-6 col-md-5 col-6">
-                    <div class="skills-2-single mb-30">
-                      <div class="progress-circular">
-                        <div
-                          style={{
-                            display: "inline",
-                            width: "126px",
-                            height: "126px",
-                          }}
-                        >
-                          <canvas width="126" height="126"></canvas>
-                          <input
-                            type="text"
-                            class="knob"
-                            value="0"
-                            data-rel="83"
-                            data-linecap="round"
-                            data-width="126"
-                            data-height="126"
-                            data-bgcolor="#e5e5e5"
-                            data-fgcolor="#f15743"
-                            data-thickness=".15"
-                            data-readonly="true"
-                            disabled=""
-                            readonly="readonly"
-                            style={{
-                              width: "67px",
-                              height: "42px",
-                              position: "absolute",
-                              verticalAlign: "middle",
-                              marginTop: "42px",
-                              marginLeft: "-96px",
-                              border: "0px",
-                              background: "none",
-                              font: "bold 25px Arial",
-                              textAlign: "center",
-                              color: "rgb(241, 87, 67)",
-                              padding: "0px",
-                              appearance: "none",
-                            }}
-                          />
-                        </div>
+                    <div className="choose-text">
+                      <h4>Quality &amp; Experience</h4>
+                      <p>
+                        Nor again is there anyone who loves or pursues desires
+                        to obtain pain of itself because it is pain but
+                        bccasionally circumstances occur in which toil and pain
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="choose-icon f-left">
+                      <i className="fas fa-medal"></i>
+                      <div className="choose-tag">
+                        <i className="fas fa-check"></i>
                       </div>
-                      <div class="skills-content">
-                        <h4>
-                          Best Online <br /> Support 24/7
-                        </h4>
-                      </div>
+                    </div>
+                    <div className="choose-text">
+                      <h4>Certificate Company</h4>
+                      <p>
+                        Nor again is there anyone who loves or pursues desires
+                        to obtain pain of itself because it is pain but
+                        bccasionally circumstances occur in which toil and pain
+                      </p>
                     </div>
                   </div>
                 </div>

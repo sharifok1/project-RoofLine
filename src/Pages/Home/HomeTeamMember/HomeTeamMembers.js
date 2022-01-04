@@ -3,21 +3,21 @@ import React from "react";
 const HomeTeamMembers = () => {
   return (
     <div>
-      <div class="team-area pt-120 pb-65">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-              <div class="section-title text-center mr-20 ml-20 pos-rel mb-70">
+      <div className="team-area pt-120 pb-65">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+              <div className="section-title text-center mr-20 ml-20 pos-rel mb-70">
                 <h1>Team</h1>
                 <span> Team member</span>
                 <h2>Meet Our Exclusive Team Members</h2>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="team-wrapper mb-60">
-                <div class="team-img">
+          <div className="row">
+            <div className="col-xl-3 col-lg-3 col-md-6">
+              <div className="team-wrapper mb-60">
+                <div className="team-img">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/01.jpg"
@@ -25,19 +25,19 @@ const HomeTeamMembers = () => {
                     />
                   </a>
                 </div>
-                <div class="team-text text-center">
-                  <div class="team-icon">
+                <div className="team-text text-center">
+                  <div className="team-icon">
                     <a href="https://www.facebook.com/">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <i class="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="https://www.instagram.com/">
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
                   <h4>
@@ -47,9 +47,9 @@ const HomeTeamMembers = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="team-wrapper mb-60">
-                <div class="team-img">
+            <div className="col-xl-3 col-lg-3 col-md-6">
+              <div className="team-wrapper mb-60">
+                <div className="team-img">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02.jpg"
@@ -57,19 +57,19 @@ const HomeTeamMembers = () => {
                     />
                   </a>
                 </div>
-                <div class="team-text text-center">
-                  <div class="team-icon">
+                <div className="team-text text-center">
+                  <div className="team-icon">
                     <a href="https://www.facebook.com/">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <i class="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="https://www.instagram.com/">
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
                   <h4>
@@ -79,9 +79,9 @@ const HomeTeamMembers = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="team-wrapper mb-60">
-                <div class="team-img">
+            <div className="col-xl-3 col-lg-3 col-md-6">
+              <div className="team-wrapper mb-60">
+                <div className="team-img">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/03.jpg"
@@ -89,19 +89,19 @@ const HomeTeamMembers = () => {
                     />
                   </a>
                 </div>
-                <div class="team-text text-center">
-                  <div class="team-icon">
+                <div className="team-text text-center">
+                  <div className="team-icon">
                     <a href="https://www.facebook.com/">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <i class="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="https://www.instagram.com/">
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
                   <h4>
@@ -111,9 +111,9 @@ const HomeTeamMembers = () => {
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="team-wrapper mb-60">
-                <div class="team-img">
+            <div className="col-xl-3 col-lg-3 col-md-6">
+              <div className="team-wrapper mb-60">
+                <div className="team-img">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/04.jpg"
@@ -121,19 +121,19 @@ const HomeTeamMembers = () => {
                     />
                   </a>
                 </div>
-                <div class="team-text text-center">
-                  <div class="team-icon">
+                <div className="team-text text-center">
+                  <div className="team-icon">
                     <a href="https://www.facebook.com/">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://twitter.com/">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <i class="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="https://www.instagram.com/">
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </div>
                   <h4>
