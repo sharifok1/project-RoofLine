@@ -27,7 +27,7 @@ const Review = () => {
           : "https://christopherscottedwards.com/wp-content/uploads/2018/07/Generic-Profile.jpg"
       }`,
     };
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://fathomless-everglades-06913.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -46,9 +46,9 @@ const Review = () => {
       });
 
     e.preventDefault();
-    console.log(reviewData)
+    console.log(reviewData);
   };
- 
+
   return (
     <div>
       <div>

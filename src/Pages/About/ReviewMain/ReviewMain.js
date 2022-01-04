@@ -15,7 +15,11 @@ const ReviewMain = () => {
     console.log(pageNumber);
   }, [!pageNumber]);
   useEffect(() => {
+<<<<<<< HEAD
+    fetch("https://fathomless-everglades-06913.herokuapp.com/reviews")
+=======
     fetch(`http://localhost:5000/reviews?page=${page}&&size=${size}`)
+>>>>>>> f589b68336f8d90af10f99800b2be5d12926f134
       .then((res) => res.json())
       .then((data) => setReview(data.result));
   }, [page]);

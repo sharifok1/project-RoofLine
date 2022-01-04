@@ -70,7 +70,7 @@ const ServiceDetails = () => {
   };
   const fetchProductDetail = async () => {
     const response = await axios
-      .get(`http://localhost:5000/services/${id}`)
+      .get(`https://fathomless-everglades-06913.herokuapp.com/services/${id}`)
       .catch((err) => {
         console.log("error ", err);
       });
