@@ -56,9 +56,13 @@ const Service = () => {
                 <a href="/">{title}</a>
               </h4>
               <p className="">{details?.slice(0, 100)}</p>
-              <a href="/">
+              <Link
+                className="fw-bold"
+                style={{ textDecoration: "none" }}
+                to={`/services/${_id}`}
+              >
                 Read More <i class="far fa-long-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
