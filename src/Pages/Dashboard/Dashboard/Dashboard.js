@@ -78,7 +78,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-cart-plus"></i> Add A Service
+                  <i className="fas fa-cart-plus"></i> Add A Service
                 </span>
               </ListItemText>
             </ListItem>
@@ -91,7 +91,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-users-cog"></i> Make Admin
+                  <i className="fas fa-users-cog"></i> Make Admin
                 </span>
               </ListItemText>
             </ListItem>
@@ -104,7 +104,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-shopping-basket"></i> Manage All Orders
+                  <i className="fas fa-shopping-basket"></i> Manage All Orders
                 </span>
               </ListItemText>
             </ListItem>
@@ -121,7 +121,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-home"></i> Home
+                  <i className="fas fa-home"></i> Home
                 </span>
               </ListItemText>
             </ListItem>
@@ -134,7 +134,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-shopping-cart"></i> My Orders
+                  <i className="fas fa-shopping-cart"></i> My Orders
                 </span>
               </ListItemText>
             </ListItem>
@@ -147,7 +147,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="fas fa-money-check-alt"></i> Pay
+                  <i className="fas fa-money-check-alt"></i> Pay
                 </span>
               </ListItemText>
             </ListItem>
@@ -160,7 +160,7 @@ function ResponsiveDrawer(props) {
             <ListItem button>
               <ListItemText>
                 <span className="fw-bold">
-                  <i class="far fa-comment-dots"></i> Review
+                  <i className="far fa-comment-dots"></i> Review
                 </span>
               </ListItemText>
             </ListItem>
@@ -172,7 +172,7 @@ function ResponsiveDrawer(props) {
         <ListItem button onClick={logout}>
           <ListItemText className="fw-bold" style={{ color: "#f15245" }}>
             <span className="fw-bold">
-              <i class="fas fa-sign-out-alt"></i> Logout
+              <i className="fas fa-sign-out-alt"></i> Logout
             </span>
           </ListItemText>
         </ListItem>

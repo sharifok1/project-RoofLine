@@ -58,21 +58,21 @@ const ManageProducts = () => {
             <div key={singleProduct._id} className="col">
               <div>
                 <div className="card shadow" style={{ minHeight: "515px" }}>
-                  <div
-                    style={{ minHeight: "300px" }}
-                    className="d-flex justify-content-center align-items-center"
-                  >
+                  <div className="d-flex justify-content-center align-items-center">
                     <img
                       src={singleProduct.img1}
-                      className="card-img img-fluid p-1"
+                      className="manage-img img-fluid p-1"
                       alt="..."
                     />
                   </div>
                   <div className="card-body border-top">
-                    <h5>${singleProduct.product_price}</h5>
+                    <h5 className="card-title fw-bold">
+                      {singleProduct.name?.slice(0, 50)}
+                    </h5>
                     <h6 className="card-title">
-                      {singleProduct.product_name?.slice(0, 50)} ...
+                      {singleProduct.title?.slice(0, 50)}
                     </h6>
+                    <h5>${singleProduct.price}</h5>
                     <Rating
                       style={{ fontSize: "15px" }}
                       name="half-rating-read"
