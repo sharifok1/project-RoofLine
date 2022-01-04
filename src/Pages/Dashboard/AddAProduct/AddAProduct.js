@@ -59,46 +59,103 @@ const AddAProduct = () => {
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
           label="Service Name"
-          name="product_name"
+          name="name"
           onBlur={handleOnBlur}
           variant="standard"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Product Price"
-          name="product_price"
+          label="title"
+          name="title"
           onBlur={handleOnBlur}
           variant="standard"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Brand"
-          name="brand"
+          label="details"
+          name="details"
           onBlur={handleOnBlur}
           variant="standard"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Screen Size"
-          name="screen_size"
+          label="details2"
+          name="details2"
           onBlur={handleOnBlur}
           variant="standard"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Rating"
-          name="rating"
+          label="service image link -1"
+          name="img1"
           onBlur={handleOnBlur}
           variant="standard"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="Review"
+          label="service image link -2"
+          name="img2"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="service image link -3"
+          name="img3"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="write security description"
+          name="security"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="professional information"
+          name="professional"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="maintenance information"
+          name="maintenance"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="support information"
+          name="support"
+          onBlur={handleOnBlur}
+          variant="standard"
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="price"
+          name="price"
+          onBlur={handleOnBlur}
+          variant="standard"
+          type='number'
+        />
+        <TextField
+          sx={{ width: "95%", m: 1 }}
+          id="standard-basic"
+          label="write review"
           name="review"
           onBlur={handleOnBlur}
           variant="standard"
@@ -106,53 +163,14 @@ const AddAProduct = () => {
         <TextField
           sx={{ width: "95%", m: 1 }}
           id="standard-basic"
-          label="CPU"
-          name="cpu"
+          label="rating"
+          name="rate"
           onBlur={handleOnBlur}
           variant="standard"
+          type='number'
         />
-        <TextField
-          sx={{ width: "95%", m: 1 }}
-          id="standard-basic"
-          label="Image url-1"
-          name="image1"
-          onBlur={handleOnBlur}
-          variant="standard"
-        />
-        <TextField
-          sx={{ width: "95%", m: 1 }}
-          id="standard-basic"
-          label="Image url-2"
-          name="image2"
-          onBlur={handleOnBlur}
-          variant="standard"
-        />
-        <TextField
-          sx={{ width: "95%", m: 1 }}
-          id="standard-basic"
-          label="Image url-3"
-          name="image3"
-          onBlur={handleOnBlur}
-          variant="standard"
-        />
-        <TextField
-          sx={{ width: "95%", m: 1 }}
-          id="standard-basic"
-          label="Image url-4"
-          name="image4"
-          onBlur={handleOnBlur}
-          variant="standard"
-        />
-        <TextField
-          sx={{ width: "95%", m: 1 }}
-          id="standard-multiline-static"
-          label="Detail"
-          name="detail"
-          onBlur={handleOnBlur}
-          multiline
-          rows={4}
-          variant="standard"
-        />
+      
+       
 
         <Button
           sx={{ width: "95%", m: 1 }}
