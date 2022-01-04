@@ -1,16 +1,54 @@
 .home-banner-bg {
-  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/01.jpg");
+  background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/03.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 750px;
 }
-
+.mt-50 {
+  margin-top: 50px;
+}
+.hero-02-text {
+  position: relative;
+}
+.hero-02-text::before {
+  position: absolute;
+  content: "";
+  background: #ffffff;
+  height: 318px;
+  width: 318px;
+  line-height: 318px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: -1;
+  left: -150px;
+  top: -120px;
+}
 .hero-slider-caption span {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+}
+.hero-slider-caption span i {
+  font-size: 22px;
+  margin-right: 15px;
+}
+.flaticon-support:before {
+  content: "";
+}
+.slider-02-button a {
+  margin-right: 8px;
+}
+.hero-slider-caption span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-02-text span {
+  color: #f15743;
 }
 .hero-text span {
   color: #f15743;
@@ -24,7 +62,7 @@
   font-size: 110px;
   margin-bottom: 8px;
   margin-top: 18px;
-  color: #ffffff;
+  color: #000;
   line-height: 1;
 }
 .hero-slider-caption p {
@@ -428,11 +466,36 @@ ul li {
   font-weight: 700;
   text-transform: uppercase;
 }
+.pt-130 {
+  padding-top: 130px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
 @media only screen and (min-width: 300px) and (max-width: 991px) {
   .process-bg-img {
     background-size: cover;
     height: 400px;
     position: relative;
     width: 100%;
+  }
+  .hero-slider-caption h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    color: #000;
+    line-height: 1;
+  }
+  .home-banner-bg {
+    background: url("https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/03.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+  }
+  .slider-02-button a {
+    margin-right: 8px;
+    margin-bottom: 10px;
   }
 }
