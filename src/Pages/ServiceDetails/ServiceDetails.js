@@ -7,6 +7,8 @@ import {
   selectedProduct,
 } from "../../redux/actions/productActions";
 import useAuth from "../Hooks/useAuth";
+import ServicesDetailsBanner from "./ServicesDetailsBanner/ServicesDetailsBanner";
+import ServicesMainDetails from "./ServicesMainDetails/ServicesMainDetails";
 
 const ServiceDetails = () => {
   const [image, setImage] = useState("");
@@ -82,8 +84,8 @@ const ServiceDetails = () => {
   }, [id]);
   return (
     <div>
-      <h1>{_id}</h1>
-      <h2>{title}</h2>
+      <ServicesDetailsBanner />
+      <ServicesMainDetails />
     </div>
   );
 };
