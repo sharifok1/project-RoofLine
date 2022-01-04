@@ -22,7 +22,7 @@ const AddAProduct = () => {
   };
   const handleProductDateSubmit = (e) => {
     const product = { ...carData };
-    fetch("http://localhost:5000/services", {
+    fetch("https://fathomless-everglades-06913.herokuapp.com/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -150,7 +150,7 @@ const AddAProduct = () => {
           name="price"
           onBlur={handleOnBlur}
           variant="standard"
-          type='number'
+          type="number"
         />
         <TextField
           sx={{ width: "95%", m: 1 }}
@@ -167,10 +167,8 @@ const AddAProduct = () => {
           name="rate"
           onBlur={handleOnBlur}
           variant="standard"
-          type='number'
+          type="number"
         />
-      
-       
 
         <Button
           sx={{ width: "95%", m: 1 }}

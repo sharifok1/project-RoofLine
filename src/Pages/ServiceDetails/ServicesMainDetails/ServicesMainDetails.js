@@ -23,7 +23,7 @@ const ServicesMainDetails = (props) => {
       condition: "pending",
       product_Detail: props.product,
     };
-    fetch("http://localhost:5000/booking", {
+    fetch("https://fathomless-everglades-06913.herokuapp.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

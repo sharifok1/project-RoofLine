@@ -4,7 +4,7 @@ import ReviewDisplay from "../ReviewDisplay/ReviewDisplay";
 const ReviewMain = () => {
   const [reviews, setReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://fathomless-everglades-06913.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
     // setRender(1)

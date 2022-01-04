@@ -123,7 +123,8 @@ const useFirebase = () => {
   const savedUser = (email, displayName, method) => {
     const users = { email, displayName };
 
-    const url = "http://localhost:5000/userCollection";
+    const url =
+      "https://fathomless-everglades-06913.herokuapp.com/userCollection";
     fetch(url, {
       method: method,
       headers: {
@@ -134,7 +135,9 @@ const useFirebase = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(
+      `https://fathomless-everglades-06913.herokuapp.com/users/${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

@@ -11,7 +11,7 @@ const ManageProducts = () => {
   const { receivePageNum, pageCount } = useAuth();
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://fathomless-everglades-06913.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => receivePageNum(Math.ceil(data.count / 8)));
   }, []);
@@ -26,7 +26,9 @@ const ManageProducts = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get(`http://localhost:5000/services?page=${page}&&size=${size}`)
+      .get(
+        `https://fathomless-everglades-06913.herokuapp.com/services?page=${page}&&size=${size}`
+      )
       .catch((err) => {
         console.log("error", err);
       });
@@ -40,7 +42,7 @@ const ManageProducts = () => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
     if (proceed) {
-      const url = `http://localhost:5000/services/${id}`;
+      const url = `https://fathomless-everglades-06913.herokuapp.com/services/${id}`;
       fetch(url, {
         method: "DELETE",
       })

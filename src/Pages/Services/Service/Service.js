@@ -7,7 +7,7 @@ import "./../Services.css";
 const Service = () => {
   const [serviceCount, setServiceCount] = useState();
   const { receivePageNum } = useAuth();
-  const url = "http://localhost:5000/services";
+  const url = "https://fathomless-everglades-06913.herokuapp.com/services";
 
   useEffect(() => {
     fetch(url)

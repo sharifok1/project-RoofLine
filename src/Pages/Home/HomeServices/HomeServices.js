@@ -9,7 +9,7 @@ const HomeServices = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get("http://localhost:5000/services")
+      .get("https://fathomless-everglades-06913.herokuapp.com/services")
       .catch((err) => {
         console.log("error", err);
       });
