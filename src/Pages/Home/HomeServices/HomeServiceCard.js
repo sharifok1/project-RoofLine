@@ -19,7 +19,6 @@ const HomeServiceCard = () => {
       img2,
       img3,
     } = product;
-    console.log(product);
     return (
       <div className="col-xl-4 col-lg-4 col-md-6">
         <div className="services-wrapper mb-30">

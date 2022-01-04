@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
-            <div class="logo">
+            <div className="logo">
               <a href="/">
                 <img
                   src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/logo.png"
