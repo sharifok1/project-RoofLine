@@ -3,13 +3,18 @@ import ReviewDisplay from "../ReviewDisplay/ReviewDisplay";
 
 const ReviewMain = () => {
   const [reviews, setReview] = useState([]);
+  const [page, setPage] = useState(0); //mush
+  const [pageNumber, setPageNumber] =useState()
+  const size = 2;
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch(`http://localhost:5000/reviews?page=${page}&&size=${size}`)
       .then((res) => res.json())
-      .then((data) => setReview(data));
-    // setRender(1)
-  }, []);
-  console.log(reviews);
+      .then((data) =>setReview(data.result)) ;
+      const count = (reviews.length)
+      setPageNumber(Math.ceil(4/size))
+      console.log()
+  }, [page]);
+  // console.log(data);
 
   return (
     <div className="section-title ml-20 pos-rel mb-50">
@@ -26,11 +31,24 @@ const ReviewMain = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
           {reviews.map((review) => (
             <div key={review._id} className="col my-4">
-              <ReviewDisplay review={review}></ReviewDisplay>
+              <ReviewDisplay review={review, pageNumber}></ReviewDisplay>
             </div>
           ))}
         </div>
       </div>
+      <div class="services-button text-center mt-30">
+              {[...Array(pageNumber)?.keys()].map((number) => (
+                <button
+                  class="c-btn"
+                  className={number === page ? "selected" : "c-btn"}
+                  key={number}
+                  onClick={() => setPage(number)}
+                >
+                  {number}
+                  {console.log(number)}
+                </button>
+              ))}
+            </div>
     </div>
   );
 };
