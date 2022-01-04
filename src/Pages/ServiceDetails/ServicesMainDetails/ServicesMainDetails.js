@@ -150,7 +150,7 @@ const ServicesMainDetails = () => {
                       <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                           <a
-                            href="#"
+                            href="/"
                             class="btn-link"
                             data-toggle="collapse"
                             data-target="#collapseOne"
@@ -184,7 +184,7 @@ const ServicesMainDetails = () => {
                       <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                           <a
-                            href="#"
+                            href="/"
                             class="btn-link collapsed"
                             data-toggle="collapse"
                             data-target="#collapseTwo"
@@ -218,7 +218,7 @@ const ServicesMainDetails = () => {
                       <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                           <a
-                            href="#"
+                            href="/"
                             class="btn-link collapsed"
                             data-toggle="collapse"
                             data-target="#collapseThree"
@@ -253,7 +253,7 @@ const ServicesMainDetails = () => {
                       <div class="card-header" id="headingFour">
                         <h5 class="mb-0">
                           <a
-                            href="#"
+                            href="/"
                             class="btn-link collapsed"
                             data-toggle="collapse"
                             data-target="#collapseFour"
@@ -340,7 +340,7 @@ const ServicesMainDetails = () => {
                     class="wpcf7-form"
                     novalidate="novalidate"
                   >
-                    <div style="display: none;">
+                    <div style={{ display: "none" }}>
                       <input type="hidden" name="_wpcf7" value="5" />
                       <br />
                       <input
@@ -439,7 +439,7 @@ const ServicesMainDetails = () => {
               <div class="textwidget custom-html-widget">
                 {" "}
                 <div class="banner-img">
-                  <a href="#">
+                  <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2020/12/banner.jpg"
                       alt=""
