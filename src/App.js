@@ -20,6 +20,7 @@ import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import ManageProducts from "./Pages/Dashboard/ManageProducts/ManageProducts";
 import Contact from "./Pages/Contact/MianContact/Contact";
 import Career from "./Pages/Career/Career";
+import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
@@ -43,14 +44,14 @@ function App() {
               </PrivateRoute>
             }
           /> */}
-          {/* <Route
-            path="/details/:productId"
+          <Route
+            path="/services/:id"
             element={
               <PrivateRoute>
-                <Details />
+                <ServiceDetails />
               </PrivateRoute>
             }
-          /> */}
+          />
           <Route
             path="/dashboard"
             element={

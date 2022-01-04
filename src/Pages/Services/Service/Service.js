@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
-
+import "./../Services.css";
 const Service = () => {
   const [serviceCount, setServiceCount] = useState();
   const { receivePageNum } = useAuth();
@@ -45,7 +45,7 @@ const Service = () => {
       <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
         <div class="services-02-wrapper mb-30">
           <div class="services-02-img f-left mr-35">
-            <img className="img-fluid" src={img1} alt="" />
+            <img className="img-fluid img-180" src={img1} alt="" />
           </div>
           <div class="inner-02-services">
             <div class="services-02-icon">
@@ -55,12 +55,14 @@ const Service = () => {
               <h4>
                 <a href="/">{title}</a>
               </h4>
-              <p className="text-info">
-                But must explain to you how all this mistaken idea of denounce
-              </p>
-              <a href="/">
+              <p className="">{details?.slice(0, 100)}</p>
+              <Link
+                className="fw-bold"
+                style={{ textDecoration: "none" }}
+                to={`/services/${_id}`}
+              >
                 Read More <i class="far fa-long-arrow-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
