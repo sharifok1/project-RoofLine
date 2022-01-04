@@ -102,7 +102,7 @@ const ManageProducts = () => {
                     style={{ backgroundColor: "#dbe3e3" }}
                   >
                     <Link
-                      to={`/details/${singleProduct._id}`}
+                      to={`/services/${singleProduct._id}`}
                       className="w-50 text-center my-2 link"
                     >
                       <button className="btn btn-outline-success">

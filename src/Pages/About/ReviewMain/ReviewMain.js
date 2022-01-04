@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import ReviewDisplay from "../ReviewDisplay/ReviewDisplay";
 
-const ReviewMain = () => {
+const ReviewMain = ({ pageNumber }) => {
   const [reviews, setReview] = useState([]);
+  console.log(pageNumber);
   const [page, setPage] = useState(0); //mush
-  const [pageNumber, setPageNumber] = useState();
+  // const [pageNumber, setPageNumber] = useState();
   const size = 2;
-  const url = "https://fathomless-everglades-06913.herokuapp.com/reviews";
+  // const url = "https://fathomless-everglades-06913.herokuapp.com/reviews";
 
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setPageNumber(data.count / size));
-    console.log(pageNumber);
-  }, [!pageNumber]);
+  // useEffect(() => {
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((data) => setPageNumber(data.count / size));
+  //   console.log(pageNumber);
+  // }, [!pageNumber]);
   useEffect(() => {
     fetch(
       `https://fathomless-everglades-06913.herokuapp.com/reviews?page=${page}&&size=${size}`
@@ -38,17 +39,18 @@ const ReviewMain = () => {
           ))}
         </div>
       </div>
-      <div className="services-button text-center mt-30">
-        {[...Array(pageNumber)?.keys()].map((number) => (
-          <button
-            className="c-btn"
-            className={number === page ? "selected" : "c-btn"}
-            key={number}
-            onClick={() => setPage(number)}
-          >
-            {number}
-          </button>
-        ))}
+      <div className="services-button text-center mt-30 mb-5">
+        {pageNumber &&
+          [...Array(pageNumber)?.keys()].map((number) => (
+            <button
+              className="c-btn"
+              className={number === page ? "selected" : "c-btn"}
+              key={number}
+              onClick={() => setPage(number)}
+            >
+              {number}
+            </button>
+          ))}
       </div>
     </div>
   );

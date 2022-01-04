@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutDelivary = () => {
   return (
@@ -73,10 +74,10 @@ const AboutDelivary = () => {
                   </ul>
                 </div>{" "}
                 <div className="about-button mt-25">
-                  <a className="c-btn border-btn" href="/">
+                  <Link className="c-btn border-btn" to="/notFound">
                     <span></span>
                     Read More<span></span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

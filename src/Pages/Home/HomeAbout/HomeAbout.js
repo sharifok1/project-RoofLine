@@ -54,9 +54,9 @@ const HomeAbout = () => {
                   </p>
                 </div>
                 <div className="about-us-text">
-                  <a href="/about">
+                  <Link to="/about">
                     Discover More <i className="far fa-long-arrow-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

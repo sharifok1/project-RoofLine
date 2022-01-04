@@ -24,13 +24,21 @@ const HomeServiceCard = () => {
       <div className="col-xl-4 col-lg-4 col-md-6">
         <div className="services-wrapper mb-30">
           <div className="services-img">
-            <a href="/">
+            <Link
+              className="fw-bold"
+              style={{ textDecoration: "none" }}
+              to={`/services/${_id}`}
+            >
               <img className="img-fluid" src={img1} alt="" />
-            </a>
+            </Link>
             <div className="services-icon">
-              <a href="/">
+              <Link
+                className="fw-bold"
+                style={{ textDecoration: "none" }}
+                to={`/services/${_id}`}
+              >
                 <i className="fas fa-angle-double-right"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="services-text text-center">
