@@ -52,6 +52,10 @@ const ServicesMainDetails = (props) => {
     img1,
     img2,
     img3,
+    security,
+    professional,
+    maintenance,
+    support,
   } = props.product;
   return (
     <div className="pb-100 pt-175">
@@ -77,10 +81,7 @@ const ServicesMainDetails = (props) => {
                     </div>
                     <div class="work-text">
                       <h4>Well Security</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet nsectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                      </p>
+                      <p>{security}</p>
                     </div>
                   </div>
                 </div>
@@ -91,10 +92,7 @@ const ServicesMainDetails = (props) => {
                     </div>
                     <div class="work-text">
                       <h4>Professional</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet nsectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                      </p>
+                      <p>{professional}</p>
                     </div>
                   </div>
                 </div>
@@ -105,10 +103,7 @@ const ServicesMainDetails = (props) => {
                     </div>
                     <div class="work-text">
                       <h4>Maintenance</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet nsectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                      </p>
+                      <p>{maintenance}</p>
                     </div>
                   </div>
                 </div>
@@ -119,10 +114,7 @@ const ServicesMainDetails = (props) => {
                     </div>
                     <div class="work-text">
                       <h4>Support 24/7</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet nsectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                      </p>
+                      <p> {support}</p>
                     </div>
                   </div>
                 </div>
@@ -196,23 +188,23 @@ const ServicesMainDetails = (props) => {
                       <input type="hidden" name="_wpcf7" value="5" />
                       <br />
                       <input
-                        type="hidden"
+                        type="text"
                         name="_wpcf7_version"
-                        value="5.0.2"
+                        // value="5.0.2"
                       />
                       <br />
-                      <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                      <input type="text" name="_wpcf7_locale" value="en_US" />
                       <br />
                       <input
-                        type="hidden"
+                        type="text"
                         name="_wpcf7_unit_tag"
-                        value="wpcf7-f5-p98-o1"
+                        // value="wpcf7-f5-p98-o1"
                       />
                       <br />
                       <input
-                        type="hidden"
+                        type="text"
                         name="_wpcf7_container_post"
-                        value="98"
+                        // value="98"
                       />
                     </div>
                     <div id="ser-side-form" class="ser-side-form">
@@ -221,11 +213,11 @@ const ServicesMainDetails = (props) => {
                           <input
                             type="text"
                             name="names"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Write Your Name"
                           />
                         </span>
@@ -235,11 +227,11 @@ const ServicesMainDetails = (props) => {
                           <input
                             type="email"
                             name="email"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Your Email"
                           />
                         </span>
@@ -249,10 +241,10 @@ const ServicesMainDetails = (props) => {
                           <input
                             type="text"
                             name="subject"
-                            value=""
+                            // value=""
                             size="40"
                             class="wpcf7-form-control wpcf7-text"
-                            aria-invalid="false"
+                            // aria-invalid="false"
                             placeholder="Subject"
                           />
                         </span>
@@ -265,8 +257,8 @@ const ServicesMainDetails = (props) => {
                             rows="10"
                             class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                             id="comments"
-                            aria-required="true"
-                            aria-invalid="false"
+                            // aria-required="true"
+                            // aria-invalid="false"
                             placeholder="Message"
                           ></textarea>
                         </span>

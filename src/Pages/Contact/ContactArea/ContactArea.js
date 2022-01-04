@@ -29,7 +29,8 @@ const ContactArea = () => {
                 class="wpcf7-form"
                 novalidate="novalidate"
                 target="_blank"
-                // action="https://formsubmit.co/team32programming@gmail.com" method="POST"
+                action="https://formsubmit.co/team32programming@gmail.com"
+                method="POST"
               >
                 <div style={{ display: " none" }}>
                   <input type="hidden" name="_wpcf7" value="131" />
