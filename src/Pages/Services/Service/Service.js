@@ -42,16 +42,16 @@ const Service = () => {
     } = product;
     // console.log(pageNumber);
     return (
-      <div key={_id} class="col-xl-6 col-lg-6 col-md-6">
-        <div class="services-02-wrapper mb-30">
-          <div class="services-02-img f-left mr-35">
+      <div key={_id} className="col-xl-6 col-lg-6 col-md-6">
+        <div className="services-02-wrapper mb-30">
+          <div className="services-02-img f-left mr-35">
             <img className="img-fluid img-180" src={img1} alt="" />
           </div>
-          <div class="inner-02-services">
-            <div class="services-02-icon">
-              <i class="flaticon-roof-3"></i>
+          <div className="inner-02-services">
+            <div className="services-02-icon">
+              <i className="flaticon-roof-3"></i>
             </div>
-            <div class="services-02-text">
+            <div className="services-02-text">
               <h4>
                 <a href="/">{title}</a>
               </h4>
@@ -61,7 +61,7 @@ const Service = () => {
                 style={{ textDecoration: "none" }}
                 to={`/services/${_id}`}
               >
-                Read More <i class="far fa-long-arrow-right"></i>
+                Read More <i className="far fa-long-arrow-right"></i>
               </Link>
             </div>
           </div>

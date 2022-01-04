@@ -34,26 +34,30 @@ const ServicesOffer = () => {
   // console.log(pageCount);
   return (
     <div>
-      <div class="service-area grey-3-bg pt-125 pb-130">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-              <div class="section-title text-center pos-rel mb-75">
+      <div className="service-area grey-3-bg pt-125 pb-130">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+              <div className="section-title text-center pos-rel mb-75">
                 <h1>Services</h1>
                 <span> what we offer</span>
                 <h2>We Provides Awesome Roofling Solutions</h2>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div className="row">
             <Service></Service>
           </div>
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="services-button text-center mt-30">
+          <div className="row">
+            <div className="col-xl-12">
+              <div className="services-button text-center mt-30">
                 {[...Array(getCount)?.keys()].map((number) => (
                   <button
+<<<<<<< HEAD
                     // class="c-btn"
+=======
+                    className="c-btn"
+>>>>>>> 51c424eb4172183d6380e7bf6f71f098a9ce55b7
                     className={number === page ? "selected" : "c-btn"}
                     key={number}
                     onClick={() => setPage(number)}

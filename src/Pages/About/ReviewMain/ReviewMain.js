@@ -38,10 +38,10 @@ const ReviewMain = () => {
           ))}
         </div>
       </div>
-      <div class="services-button text-center mt-30">
+      <div className="services-button text-center mt-30">
         {[...Array(pageNumber)?.keys()].map((number) => (
           <button
-            class="c-btn"
+            className="c-btn"
             className={number === page ? "selected" : "c-btn"}
             key={number}
             onClick={() => setPage(number)}
