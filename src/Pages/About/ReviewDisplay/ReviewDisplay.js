@@ -2,9 +2,9 @@ import { Rating } from "@mui/material";
 import React from "react";
 
 import "./ReviewDisplay.css";
-const ReviewDisplay = ({ review }) => {
+const ReviewDisplay = ({ review, }) => {
   const { image, feedback, name, email, rating } = review;
-  console.log(review);
+//   console.log(review);
 
   return (
     <div>
@@ -46,6 +46,7 @@ const ReviewDisplay = ({ review }) => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

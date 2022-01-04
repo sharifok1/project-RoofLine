@@ -3,13 +3,22 @@ import ReviewDisplay from "../ReviewDisplay/ReviewDisplay";
 
 const ReviewMain = () => {
   const [reviews, setReview] = useState([]);
+  const [page, setPage] = useState(0); //mush
+  const [pageNumber, setPageNumber] = useState();
+  const size = 2;
+  const url = "http://localhost:5000/reviews";
+
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch(url)
       .then((res) => res.json())
-      .then((data) => setReview(data));
-    // setRender(1)
-  }, []);
-  console.log(reviews);
+      .then((data) => setPageNumber(data.count / size));
+    console.log(pageNumber);
+  }, [!pageNumber]);
+  useEffect(() => {
+    fetch(`http://localhost:5000/reviews?page=${page}&&size=${size}`)
+      .then((res) => res.json())
+      .then((data) => setReview(data.result));
+  }, [page]);
 
   return (
     <div className="section-title ml-20 pos-rel mb-50">
@@ -26,6 +35,18 @@ const ReviewMain = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div class="services-button text-center mt-30">
+        {[...Array(pageNumber)?.keys()].map((number) => (
+          <button
+            class="c-btn"
+            className={number === page ? "selected" : "c-btn"}
+            key={number}
+            onClick={() => setPage(number)}
+          >
+            {number}
+          </button>
+        ))}
       </div>
     </div>
   );

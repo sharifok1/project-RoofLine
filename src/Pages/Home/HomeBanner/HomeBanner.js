@@ -31,18 +31,10 @@ const HomeBanner = () => {
                   data-animation="fadeInUp"
                   data-delay="1.s"
                 >
-                  <a
-                    class="c-btn"
-                    href="https://shtheme.org/demosd/roofline/?page_id=70"
-                    tabindex="0"
-                  >
+                  <a class="c-btn" href="*" tabindex="0">
                     <span></span> Need Helps <span></span>
                   </a>
-                  <a
-                    class="c-btn btn-white"
-                    href="https://shtheme.org/demosd/roofline/?page_id=68"
-                    tabindex="0"
-                  >
+                  <a class="c-btn btn-white" href="*" tabindex="0">
                     <span></span> About Us <span></span>
                   </a>
                 </div>

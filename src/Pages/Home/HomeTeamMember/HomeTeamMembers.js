@@ -42,7 +42,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Brandon L. Munger</a>
+                    <a href="*">Brandon L. Munger</a>
                   </h4>
                   <span>Roof Engineer</span>
                 </div>
@@ -106,7 +106,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Michel Jhons Doe</a>
+                    <a href="*">Michel Jhons Doe</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>
@@ -138,7 +138,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Sokina Malika Sox</a>
+                    <a href="*">Sokina Malika Sox</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>
