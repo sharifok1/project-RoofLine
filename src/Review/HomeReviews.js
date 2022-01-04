@@ -27,7 +27,7 @@ const HomeReviews = ({ ratings }) => {
       <div className="card border-0 shadow">
         <Carousel
           responsive={responsive}
-          //   autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          autoPlay={this.props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={1000}
         >
           <div
