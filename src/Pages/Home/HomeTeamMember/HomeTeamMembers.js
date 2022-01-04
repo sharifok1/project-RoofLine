@@ -17,7 +17,7 @@ const HomeTeamMembers = () => {
           <div className="row">
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
-                <div className="team-img">
+                <div className="team-img d-flex align-items-center justify-content-center">
                   <a href="/">
                     <img
                       className="img-fluid"
@@ -50,7 +50,7 @@ const HomeTeamMembers = () => {
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
-                <div className="team-img">
+                <div className="team-img d-flex align-items-center justify-content-center">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02.jpg"
@@ -82,7 +82,7 @@ const HomeTeamMembers = () => {
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
-                <div className="team-img">
+                <div className="team-img d-flex align-items-center justify-content-center">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/03.jpg"
@@ -114,7 +114,7 @@ const HomeTeamMembers = () => {
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
-                <div className="team-img">
+                <div className="team-img d-flex align-items-center justify-content-center">
                   <a href="/">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/04.jpg"
