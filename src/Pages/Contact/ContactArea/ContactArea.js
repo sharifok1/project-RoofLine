@@ -5,15 +5,18 @@ const ContactArea = () => {
   return (
     <div>
       <div className="container">
-      <div style={{
-            textAlign:'center',
-            marginBottom:'50px'
-          }}>
-             <NavLink to="/career">
-            <button class="wpcf7-form-control wpcf7-submit c-btn text-light"> 
-            Share Your business With us</button>
-            </NavLink>
-          </div>
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "50px",
+          }}
+        >
+          <NavLink to="/career">
+            <button className="wpcf7-form-control wpcf7-submit c-btn text-light">
+              Share Your business With us
+            </button>
+          </NavLink>
+        </div>
 
         <div className="row">
           <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">

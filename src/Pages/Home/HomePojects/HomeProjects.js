@@ -3,12 +3,12 @@ import React from "react";
 const HomeProjects = () => {
   return (
     <div>
-      {/* <div class="project-03-area ">
-        <div class="container-fluid">
-          <div class="row project-active slick-initialized slick-slider">
-            <div class="slick-list draggable">
+      {/* <div className="project-03-area ">
+        <div className="container-fluid">
+          <div className="row project-active slick-initialized slick-slider">
+            <div className="slick-list draggable">
               <div
-                class="slick-track"
+                className="slick-track"
                 style={{
                   opacity: "1",
                   width: "6358px",
@@ -16,14 +16,14 @@ const HomeProjects = () => {
                 }}
               >
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="-5"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                         tabindex="-1"
@@ -33,7 +33,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
@@ -44,26 +44,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="-4"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                         tabindex="-1"
@@ -73,7 +73,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-house"
@@ -84,26 +84,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="-3"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                         tabindex="-1"
@@ -113,7 +113,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
@@ -124,26 +124,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="-2"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                         tabindex="-1"
@@ -153,7 +153,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
@@ -164,26 +164,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="-1"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                         tabindex="-1"
@@ -193,7 +193,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
@@ -204,26 +204,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide"
+                  className="col-xl-3 slick-slide"
                   data-slick-index="0"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
                         tabindex="-1"
@@ -233,7 +233,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
@@ -244,26 +244,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide"
+                  className="col-xl-3 slick-slide"
                   data-slick-index="1"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                         tabindex="-1"
@@ -273,7 +273,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
@@ -284,26 +284,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide"
+                  className="col-xl-3 slick-slide"
                   data-slick-index="2"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                         tabindex="-1"
@@ -313,7 +313,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-house"
@@ -324,26 +324,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide"
+                  className="col-xl-3 slick-slide"
                   data-slick-index="3"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                         tabindex="-1"
@@ -353,7 +353,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
@@ -364,26 +364,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-current slick-active"
+                  className="col-xl-3 slick-slide slick-current slick-active"
                   data-slick-index="4"
                   aria-hidden="false"
                   style={{ width: "374px" }}
                   tabindex="0"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                         tabindex="0"
@@ -393,7 +393,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
@@ -404,26 +404,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                           tabindex="0"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-active"
+                  className="col-xl-3 slick-slide slick-active"
                   data-slick-index="5"
                   aria-hidden="false"
                   style={{ width: "374px" }}
                   tabindex="0"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                         tabindex="0"
@@ -433,7 +433,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
@@ -444,26 +444,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                           tabindex="0"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned slick-active"
+                  className="col-xl-3 slick-slide slick-cloned slick-active"
                   data-slick-index="6"
                   aria-hidden="false"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
                         tabindex="0"
@@ -473,7 +473,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
@@ -484,26 +484,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify"
                           tabindex="0"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned slick-active"
+                  className="col-xl-3 slick-slide slick-cloned slick-active"
                   data-slick-index="7"
                   aria-hidden="false"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                         tabindex="0"
@@ -513,7 +513,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
@@ -524,26 +524,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-2"
                           tabindex="0"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned slick-active"
+                  className="col-xl-3 slick-slide slick-cloned slick-active"
                   data-slick-index="8"
                   aria-hidden="false"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                         tabindex="0"
@@ -553,7 +553,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-house"
@@ -564,26 +564,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-house"
                           tabindex="0"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="9"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                         tabindex="-1"
@@ -593,7 +593,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
@@ -604,26 +604,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-5"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="10"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                         tabindex="-1"
@@ -633,7 +633,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
@@ -644,26 +644,26 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-6"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="col-xl-3 slick-slide slick-cloned"
+                  className="col-xl-3 slick-slide slick-cloned"
                   data-slick-index="11"
                   aria-hidden="true"
                   style={{ width: "374px" }}
                   tabindex="-1"
                 >
-                  <div class="project-03-wrapper">
-                    <div class="project-03-img pos-rel">
+                  <div className="project-03-wrapper">
+                    <div className="project-03-img pos-rel">
                       <a
                         href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                         tabindex="-1"
@@ -673,7 +673,7 @@ const HomeProjects = () => {
                           alt=""
                         />
                       </a>
-                      <div class="project-03-text">
+                      <div className="project-03-text">
                         <h3>
                           <a
                             href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
@@ -684,12 +684,12 @@ const HomeProjects = () => {
                         </h3>
                         <span>Modify House</span>
                       </div>
-                      <div class="project-03-icon">
+                      <div className="project-03-icon">
                         <a
                           href="https://shtheme.org/demosd/roofline/?project=roofing-modify-3"
                           tabindex="-1"
                         >
-                          <i class="far fa-angle-double-right"></i>
+                          <i className="far fa-angle-double-right"></i>
                         </a>
                       </div>
                     </div>
