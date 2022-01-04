@@ -18,7 +18,7 @@ const HomeTeamMembers = () => {
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
                 <div className="team-img">
-                  <a href="/">
+                  <a href="*">
                     <img
                       className="img-fluid"
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/01.jpg"
@@ -42,7 +42,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Brandon L. Munger</a>
+                    <a href="*">Brandon L. Munger</a>
                   </h4>
                   <span>Roof Engineer</span>
                 </div>
@@ -51,7 +51,7 @@ const HomeTeamMembers = () => {
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
                 <div className="team-img">
-                  <a href="/">
+                  <a href="*">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02.jpg"
                       alt=""
@@ -83,7 +83,7 @@ const HomeTeamMembers = () => {
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
                 <div className="team-img">
-                  <a href="/">
+                  <a href="*">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/03.jpg"
                       alt=""
@@ -106,7 +106,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Michel Jhons Doe</a>
+                    <a href="*">Michel Jhons Doe</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>
@@ -115,7 +115,7 @@ const HomeTeamMembers = () => {
             <div className="col-xl-3 col-lg-3 col-md-6">
               <div className="team-wrapper mb-60">
                 <div className="team-img">
-                  <a href="/">
+                  <a href="*">
                     <img
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/04.jpg"
                       alt=""
@@ -138,7 +138,7 @@ const HomeTeamMembers = () => {
                     </a>
                   </div>
                   <h4>
-                    <a href="/">Sokina Malika Sox</a>
+                    <a href="*">Sokina Malika Sox</a>
                   </h4>
                   <span>Project Manager</span>
                 </div>

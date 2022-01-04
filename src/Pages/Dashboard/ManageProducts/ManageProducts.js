@@ -8,19 +8,17 @@ import axios from "axios";
 import useAuth from "../../Hooks/useAuth";
 
 const ManageProducts = () => {
-  const {receivePageNum, pageCount } = useAuth();
+  const { receivePageNum, pageCount } = useAuth();
 
-  useEffect(()=>{
-    fetch('http://localhost:5000/services')
-    .then(res=> res.json())
-    .then(data =>receivePageNum(Math.ceil(data.count/8)))
-  },[])
-  const [page, setPage] = useState(0); 
+  useEffect(() => {
+    fetch("http://localhost:5000/services")
+      .then((res) => res.json())
+      .then((data) => receivePageNum(Math.ceil(data.count / 8)));
+  }, []);
+  const [page, setPage] = useState(0);
   const getCount = pageCount;
-  console.log('total page are',getCount)
-  
+  console.log("total page are", getCount);
 
- 
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const size = 8;
@@ -34,11 +32,10 @@ const ManageProducts = () => {
       });
     setIsLoading(false);
     dispatch(setProducts(response.data.result));
-  
   };
   useEffect(() => {
     fetchProducts();
-  }, [page,!products]);
+  }, [page, !products]);
   const handleDeleteProduct = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
@@ -60,7 +57,7 @@ const ManageProducts = () => {
         });
     }
   };
-  
+
   return (
     <div className="container">
       <h1 className="heading text-primary">MANAGE PRODUCTS</h1>
@@ -93,7 +90,7 @@ const ManageProducts = () => {
                     <Rating
                       style={{ fontSize: "15px" }}
                       name="half-rating-read"
-                      value={`${singleProduct.rating}`}
+                      value={singleProduct.rate}
                       precision={0.5}
                       readOnly
                     />
@@ -123,21 +120,20 @@ const ManageProducts = () => {
             </div>
           ))}
         </div>
-        
       )}
-       <div class="services-button text-center mt-30">
-              {[...Array(getCount)?.keys()].map((number) => (
-                <button
-                  class="c-btn"
-                  className={number === page ? "selected" : "c-btn"}
-                  key={number}
-                  onClick={() => setPage(number)}
-                >
-                  {number}
-                  {console.log(number)}
-                </button>
-              ))}
-            </div>
+      <div class="services-button text-center mt-30">
+        {[...Array(getCount)?.keys()].map((number) => (
+          <button
+            class="c-btn"
+            className={number === page ? "selected" : "c-btn"}
+            key={number}
+            onClick={() => setPage(number)}
+          >
+            {number}
+            {console.log(number)}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

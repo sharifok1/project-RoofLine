@@ -16,8 +16,8 @@ const Home = () => {
       <Header />
       <HomeBanner />
       <HomeAbout />
-      <HomeServices />
       <HomeWeDo />
+      <HomeServices />
       <HomeProjects />
       <HomeProgress />
       <HomeTeamMembers />
