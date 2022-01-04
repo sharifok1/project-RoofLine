@@ -28,7 +28,8 @@ const ContactArea = () => {
                 method="post"
                 class="wpcf7-form"
                 novalidate="novalidate"
-                target="_blank" action="https://formsubmit.co/team32programming@gmail.com" method="POST"
+                target="_blank"
+                // action="https://formsubmit.co/team32programming@gmail.com" method="POST"
               >
                 <div style={{ display: " none" }}>
                   <input type="hidden" name="_wpcf7" value="131" />
@@ -45,7 +46,7 @@ const ContactArea = () => {
                     value="70"
                   />
                 </div>
-                <div id="contacts-form" class="contacts-form">
+                <di v id="contacts-form" class="contacts-form">
                   <div class="row">
                     <div class="col-lg-4 col-md-12">
                       <div class="contacts-icon contactss-name">
@@ -126,7 +127,7 @@ const ContactArea = () => {
                     </div>
                     <p></p>
                   </div>
-                </div>
+                </di>
                 <div class="wpcf7-response-output wpcf7-display-none"></div>
               </form>
             </div>
