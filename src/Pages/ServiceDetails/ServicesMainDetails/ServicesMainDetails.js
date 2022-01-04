@@ -1,7 +1,46 @@
-import React from "react";
+import { Button, TextField, Typography } from "@mui/material";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
+import useAuth from "../../Hooks/useAuth";
 
 const ServicesMainDetails = (props) => {
+  const { user } = useAuth();
+  const [bookingData, setBookingData] = useState({});
+  const navigate = useNavigate();
+  const handleOnBlur = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+    const newProductData = { ...bookingData };
+    newProductData[field] = value;
+    setBookingData(newProductData);
+  };
+  const handleProductDateSubmit = (e) => {
+    const booking = {
+      ...bookingData,
+      name: user.displayName,
+      email: user.email,
+      condition: "pending",
+      product_Detail: props.product,
+    };
+    fetch("http://localhost:5000/booking", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(booking),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          window.alert("Order SuccessFull ");
+          document.getElementById("Form").reset();
+          navigate("/dashboard/myOrders");
+        }
+      });
+
+    e.preventDefault();
+  };
   const {
     _id,
     name,
@@ -261,6 +300,108 @@ const ServicesMainDetails = (props) => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div
+          id="show"
+          style={{
+            minHeight: "450px",
+            backgroundImage: `url(https://i.ibb.co/NxpPwq8/Buy-now.jpg)`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          <div id="buyNow" className="container">
+            <form
+              id="Form"
+              className="my-5 p-4 rounded shadow mx-auto"
+              style={{ maxWidth: "50rem", backgroundColor: "#000000ba" }}
+              onSubmit={handleProductDateSubmit}
+            >
+              <Typography
+                style={{
+                  color: "deeppink",
+                  textAlign: "center",
+                  fontFamily: `"Yanone Kaffeesatz", sans-serif`,
+                }}
+                sx={{ my: 3 }}
+                variant="h3"
+                gutterBottom
+              >
+                ORDER NOW
+              </Typography>
+              <Typography variant="h6" className="text-primary fw-bold">
+                Hi <span className="text-success">{user.displayName}</span>,
+                your selected product model is{" "}
+                <span className="text-success">{name}</span>
+                .<br />
+                <span className="text-danger">
+                  Please fill up the text field to parches the product.
+                </span>
+                Thank you.
+              </Typography>
+              <TextField
+                sx={{ width: "95%", m: 1, input: { color: "white" } }}
+                id="standard-basic"
+                label="Your Name"
+                focused
+                value={`${user.displayName}`}
+                color="success"
+                name="name"
+                variant="standard"
+              />
+              <TextField
+                sx={{ width: "95%", m: 1, input: { color: "white" } }}
+                id="standard-basic"
+                label="Your Email"
+                color="success"
+                focused
+                value={`${user.email}`}
+                name="email"
+                variant="standard"
+              />
+              <div id="emailHelp" className="form-text text-primary">
+                We will take your name and email by default.
+              </div>
+              <TextField
+                sx={{ width: "95%", m: 1, input: { color: "white" } }}
+                id="standard-basic"
+                label="Phone"
+                color="success"
+                name="phone"
+                required
+                placeholder="Please Enter Your Phone Number"
+                onBlur={handleOnBlur}
+                variant="standard"
+                focused
+              />
+              <TextField
+                sx={{ width: "95%", m: 1, input: { color: "white" } }}
+                id="standard-basic"
+                color="success"
+                required
+                placeholder="Please Enter Your Location"
+                label="Your Location"
+                name="location"
+                onBlur={handleOnBlur}
+                variant="standard"
+                focused
+              />
+
+              <Button
+                sx={{ width: "95%", m: 1 }}
+                style={{
+                  backgroundColor: "crimson",
+                }}
+                type="submit"
+                variant="contained"
+              >
+                BUY
+              </Button>
+              {/* {isLoading && <CircularProgress />} */}
+            </form>
           </div>
         </div>
       </div>
