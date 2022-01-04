@@ -20,6 +20,7 @@ const HomeTeamMembers = () => {
                 <div className="team-img">
                   <a href="/">
                     <img
+                      className="img-fluid"
                       src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/01.jpg"
                       alt=""
                     />

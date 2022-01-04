@@ -472,6 +472,130 @@ ul li {
 .mt-30 {
   margin-top: 30px;
 }
+.services-img > a {
+  position: relative;
+  display: block;
+}
+.services-img > a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    #030316 0%,
+    rgba(12, 12, 28, 0.5) 32%,
+    rgba(30, 30, 42, 0.01) 99%,
+    #1e1e2a 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    #030316 0%,
+    rgba(12, 12, 28, 0.5) 32%,
+    rgba(30, 30, 42, 0.01) 99%,
+    #1e1e2a 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #030316 0%,
+    rgba(12, 12, 28, 0.5) 32%,
+    rgba(30, 30, 42, 0.01) 99%,
+    #1e1e2a 100%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    #030316 0%,
+    rgba(12, 12, 28, 0.5) 32%,
+    rgba(30, 30, 42, 0.01) 99%,
+    #1e1e2a 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+  z-index: 1;
+}
+.services-img > a img {
+  width: 100%;
+  transition: 0.3s;
+}
+.services-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9;
+}
+.services-icon > a {
+  font-size: 18px;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 2px solid #a98c8b;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+.services-wrapper .services-text.text-center {
+  text-align: left !important;
+}
+.services-text {
+  padding: 0px 40px;
+}
+.services-text h4 {
+  margin-top: 20px;
+  /* padding: 0px 20px; */
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.services-text p {
+  margin-bottom: 30px;
+}
+.ser-icon i {
+  color: #f15743;
+  font-size: 48px;
+  line-height: 1;
+}
+.services-wrapper .services-img a img {
+  height: 400px;
+}
+.services-wrapper:hover .services-img a img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.services-wrapper {
+  overflow: hidden;
+  padding: 0px 0px 20px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.services-wrapper:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.shape-item {
+  position: absolute;
+  z-index: -1;
+}
+.ab-01 {
+  bottom: 9%;
+  left: 17%;
+}
+.ab-02 {
+  top: -5%;
+  right: 16%;
+}
 @media only screen and (min-width: 300px) and (max-width: 991px) {
   .process-bg-img {
     background-size: cover;

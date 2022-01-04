@@ -32,39 +32,39 @@ const ServicesOffer = () => {
   // console.log(pageCount);
   return (
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-            <div class="section-title text-center pos-rel mb-75">
-              <h1>Services</h1>
-              <span> what we offer</span>
-              <h2>We Provides Awesome Roofling Solutions</h2>
+      <div class="service-area grey-3-bg pt-125 pb-130">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+              <div class="section-title text-center pos-rel mb-75">
+                <h1>Services</h1>
+                <span> what we offer</span>
+                <h2>We Provides Awesome Roofling Solutions</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <Service></Service>
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="services-button text-center mt-30">
-              {[...Array(getCount)?.keys()].map((number) => (
-                <button
-                  class="c-btn"
-                  className={number === page ? "selected" : "c-btn"}
-                  key={number}
-                  onClick={() => setPage(number)}
-                >
-                  {number}
-                  {console.log(number)}
-                </button>
-              ))}
+          <div class="row">
+            <Service></Service>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="services-button text-center mt-30">
+                {[...Array(getCount)?.keys()].map((number) => (
+                  <button
+                    class="c-btn"
+                    className={number === page ? "selected" : "c-btn"}
+                    key={number}
+                    onClick={() => setPage(number)}
+                  >
+                    {number}
+                    {console.log(number)}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="service-area grey-3-bg pt-125 pb-130"></div>
     </div>
   );
 };

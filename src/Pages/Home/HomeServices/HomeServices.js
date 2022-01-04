@@ -19,15 +19,19 @@ const HomeServices = () => {
     fetchProducts();
   }, []);
   return (
-    <div>
+    <div className="container">
       <div className="py-5">
-        <div className="section-title mr-20 pos-rel mb-80 text-center col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
-          <h1>Services</h1>
-          <span>WHAT WE OFFER</span>
-          <h2>We Provides Awesome Roofling Solutions</h2>
-          <div className="row">
-            <HomeServiceCard></HomeServiceCard>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+            <div class="section-title text-center pos-rel mb-75">
+              <h1>Services</h1>
+              <span> what we offer</span>
+              <h2>We Provides Awesome Roofling Solutions</h2>
+            </div>
           </div>
+        </div>
+        <div className="row">
+          <HomeServiceCard></HomeServiceCard>
         </div>
       </div>
     </div>
