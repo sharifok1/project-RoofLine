@@ -1,11 +1,22 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ContactArea = () => {
   return (
     <div>
       <div class="container">
+          <div style={{
+            textAlign:'center',
+            marginBottom:'50px'
+          }}>
+             <NavLink to="/career">
+            <button class="wpcf7-form-control wpcf7-submit c-btn text-light"> 
+            Share Your business With us</button>
+            </NavLink>
+          </div>
         <div class="row">
           <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+          
             <div class="section-title text-center pos-rel mb-75">
               <h1>Message</h1>
               <span>Get in touch</span>
