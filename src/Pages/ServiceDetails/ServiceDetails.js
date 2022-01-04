@@ -7,6 +7,8 @@ import {
   selectedProduct,
 } from "../../redux/actions/productActions";
 import useAuth from "../Hooks/useAuth";
+import Footer from "../Shared/Footer/Footer";
+import Header from "../Shared/Header/Header";
 import ServicesDetailsBanner from "./ServicesDetailsBanner/ServicesDetailsBanner";
 import ServicesMainDetails from "./ServicesMainDetails/ServicesMainDetails";
 
@@ -84,8 +86,10 @@ const ServiceDetails = () => {
   }, [id]);
   return (
     <div>
+      <Header />
       <ServicesDetailsBanner />
       <ServicesMainDetails product={product} />
+      <Footer />
     </div>
   );
 };

@@ -15,45 +15,26 @@ const ServicesMainDetails = (props) => {
     img3,
   } = props.product;
   return (
-    <div>
+    <div className="pb-100 pt-175">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 col-lg-8 mb-30">
             <div class="services-details-wrapper">
               <div class="services-details-img">
-                <img
-                  src="https://shtheme.org/demosd/roofline/wp-content/uploads/2020/12/b3.jpg"
-                  alt=""
-                />
+                <img className="h-500" src={img1} alt="" />
               </div>
               <div class="services-details-text">
-                <span>Roofing Design</span>
-                <h2>Roofing Cleaning</h2>
+                <span>{title}</span>
+                <h2>{name}</h2>
               </div>
               <div class="services-details-text mt-30">
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, tot am rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi tempor a incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                  nostrum exercitationem ullam corporis suscipit laboriosam,
-                  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-                  iure reprehenderit qui in ea voluptate velit esse quam nihil
-                  molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                  voluptas nulla pariatur
-                </p>
+                <p>{details}</p>
               </div>
               <div class="row mb-15">
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
                   <div class="single-work">
                     <div class="work-icon">
-                      <i class="far fa-location"></i>
+                      <i class="fas fa-location"></i>
                     </div>
                     <div class="work-text">
                       <h4>Well Security</h4>
@@ -67,7 +48,7 @@ const ServicesMainDetails = (props) => {
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
                   <div class="single-work">
                     <div class="work-icon">
-                      <i class="far fa-layer-group"></i>
+                      <i class="fas fa-layer-group"></i>
                     </div>
                     <div class="work-text">
                       <h4>Professional</h4>
@@ -81,7 +62,7 @@ const ServicesMainDetails = (props) => {
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
                   <div class="single-work">
                     <div class="work-icon">
-                      <i class="far fa-sun"></i>
+                      <i class="fas fa-sun"></i>
                     </div>
                     <div class="work-text">
                       <h4>Maintenance</h4>
@@ -95,7 +76,7 @@ const ServicesMainDetails = (props) => {
                 <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
                   <div class="single-work">
                     <div class="work-icon">
-                      <i class="far fa-umbrella-beach"></i>
+                      <i class="fas fa-umbrella-beach"></i>
                     </div>
                     <div class="work-text">
                       <h4>Support 24/7</h4>
@@ -117,189 +98,18 @@ const ServicesMainDetails = (props) => {
               <div class="row mt-50 mb-10">
                 <div class="col-xl-6 col-lg-6 mb-30">
                   <div class="services-details-img">
-                    <img
-                      src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/02-5.jpg"
-                      alt=""
-                    />
+                    <img className="h-300" src={img2} alt="" />
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 mb-30">
                   <div class="services-details-img">
-                    <img
-                      src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/07/03-5.jpg"
-                      alt=""
-                    />
-                    <div class="services-play-icon">
-                      <a
-                        class="popup-video play-btn-style"
-                        href="https://www.youtube.com/watch?v=LTXD6XZXc3U"
-                      >
-                        <i class="fas fa-play"></i>
-                      </a>
-                    </div>
+                    <img className="h-300" src={img3} alt="" />
                   </div>
                 </div>
               </div>
               <div class="services-details-info mb-45">
-                <p>
-                  But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising pain was born and I will give
-                  you a complete account of the system, and expound the actual
-                  teachings of the great explorer of the truth, the
-                  master-builder of human happiness. No one rejects, dislikes,
-                  or avoids pleasure itself, because it is pleasure, but because
-                  those who do not know how to pursue pleasure rationally
-                  encounter consequences that are extremely painful. Nor again
-                  is there anyone who loves or pursues or desires to obtain pain
-                  of itself, because it is pain, but because occasionally
-                  circumstances occur in which toil and pain can procure him
-                  some great pleasure. To take a trivial example
-                </p>
+                <p>{details2}</p>
               </div>
-              <div class="faq-wrapper">
-                <div class="faq-box">
-                  <div id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <a
-                            href="/"
-                            class="btn-link"
-                            data-toggle="collapse"
-                            data-target="#collapseOne"
-                            aria-expanded="false"
-                            aria-controls="collapseOne"
-                          >
-                            Community Resources Weekly Newsletter ?
-                          </a>
-                        </h5>
-                      </div>
-                      <div
-                        class="collapse show"
-                        id="collapseOne"
-                        aria-labelledby="headingOne"
-                        data-parent="#accordion"
-                      >
-                        <div class="card-body">
-                          <p>
-                            On the other hand, we denounce with righteous
-                            indignation and dislike men who are so beguiled and
-                            demoralized by the charms of pleasure of the moment,
-                            so blinded by desire, that they cannot foresee the
-                            pain and trouble that are bound to ensue; and equal
-                            blame belongs to those who fail in their duty
-                            through weakness of will, which is the same
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <a
-                            href="/"
-                            class="btn-link collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            Better Error Handling In NodeJS With Classes
-                          </a>
-                        </h5>
-                      </div>
-                      <div
-                        id="collapseTwo"
-                        class="collapse"
-                        aria-labelledby="headingTwo"
-                        data-parent="#accordion"
-                      >
-                        <div class="card-body">
-                          <p>
-                            On the other hand, we denounce with righteous
-                            indignation and dislike men who are so beguiled and
-                            demoralized by the charms of pleasure of the moment,
-                            so blinded by desire, that they cannot foresee the
-                            pain and trouble that are bound to ensue; and equal
-                            blame belongs to those who fail in their duty
-                            through weakness of will, which is the same
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <a
-                            href="/"
-                            class="btn-link collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            {" "}
-                            A Practical Guide To Product Tours In React
-                          </a>
-                        </h5>
-                      </div>
-                      <div
-                        id="collapseThree"
-                        class="collapse"
-                        aria-labelledby="headingThree"
-                        data-parent="#accordion"
-                      >
-                        <div class="card-body">
-                          <p>
-                            On the other hand, we denounce with righteous
-                            indignation and dislike men who are so beguiled and
-                            demoralized by the charms of pleasure of the moment,
-                            so blinded by desire, that they cannot foresee the
-                            pain and trouble that are bound to ensue; and equal
-                            blame belongs to those who fail in their duty
-                            through weakness of will, which is the same
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingFour">
-                        <h5 class="mb-0">
-                          <a
-                            href="/"
-                            class="btn-link collapsed"
-                            data-toggle="collapse"
-                            data-target="#collapseFour"
-                            aria-expanded="false"
-                            aria-controls="collapseFour"
-                          >
-                            {" "}
-                            Can You Design A Website For The Five Senses?
-                          </a>
-                        </h5>
-                      </div>
-                      <div
-                        id="collapseFour"
-                        class="collapse"
-                        aria-labelledby="headingFour"
-                        data-parent="#accordion"
-                      >
-                        <div class="card-body">
-                          <p>
-                            On the other hand, we denounce with righteous
-                            indignation and dislike men who are so beguiled and
-                            demoralized by the charms of pleasure of the moment,
-                            so blinded by desire, that they cannot foresee the
-                            pain and trouble that are bound to ensue; and equal
-                            blame belongs to those who fail in their duty
-                            through weakness of will, which is the same
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>{" "}
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 mb-30">
@@ -310,29 +120,19 @@ const ServicesMainDetails = (props) => {
               {" "}
               <ul class="service-details-list">
                 <li>
-                  <a href="https://shtheme.org/demosd/roofline/?category2=maintenance-repairs">
-                    Maintenance &amp; Repairs
-                  </a>
+                  <a href="/">Maintenance &amp; Repairs</a>
                 </li>
                 <li>
-                  <a href="https://shtheme.org/demosd/roofline/?category2=roof-transportations">
-                    Roof Transportations
-                  </a>
+                  <a href="/">Roof Transportations</a>
                 </li>
                 <li>
-                  <a href="https://shtheme.org/demosd/roofline/?category2=roofing-buildup">
-                    Roofing Buildup
-                  </a>
+                  <a href="/">Roofing Buildup</a>
                 </li>
                 <li>
-                  <a href="https://shtheme.org/demosd/roofline/?category2=roofing-cleaning">
-                    Roofing Cleaning
-                  </a>
+                  <a href="/">Roofing Cleaning</a>
                 </li>
                 <li>
-                  <a href="https://shtheme.org/demosd/roofline/?category2=roofing-repairs">
-                    Roofing Repairs
-                  </a>
+                  <a href="/">Roofing Repairs</a>
                 </li>
               </ul>
             </div>

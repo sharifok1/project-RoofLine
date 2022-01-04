@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./../ServicesDetails.css";
 const ServicesDetailsBanner = () => {
   return (
-    <div>
+    <div className="ServicesDetailsBanner">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -14,7 +14,7 @@ const ServicesDetailsBanner = () => {
                 <li>
                   <a href="https://shtheme.org/demosd/roofline/">Home </a>
                 </li>
-                <li>
+                <li className="breadcrumb-menu22">
                   <span>Service Details </span>
                 </li>
               </ul>

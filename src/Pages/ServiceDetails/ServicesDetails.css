@@ -1,0 +1,318 @@
+.ServicesDetailsBanner {
+  background: url("https://shtheme.org/demosd/roofline/wp-content/themes/roofline/assets/img/bg/06.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+.pt-175 {
+  padding-top: 175px;
+}
+.services-details-img img {
+  width: 100%;
+}
+.services-details-text {
+  margin-top: 43px;
+  margin-bottom: 38px;
+}
+.services-details-text span {
+  color: #f15743;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+}
+.services-details-text h2 {
+  font-size: 45px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.services-details-text.mt-30 {
+  margin-top: 30px;
+}
+.services-details-text {
+  margin-top: 43px;
+  margin-bottom: 38px;
+}
+.services-details-text p {
+  margin-bottom: 0;
+  margin-right: 43px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.work-icon {
+  float: left;
+  margin-right: 20px;
+}
+.work-icon i {
+  color: #f15743;
+  font-size: 30px;
+}
+.fa-location:before {
+  content: "\f601";
+}
+.work-text {
+  overflow: hidden;
+}
+.work-text h4 {
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+.work-text p {
+  margin-bottom: 0;
+}
+.services-details-tag {
+  padding: 44px 70px;
+}
+.services-details-tag h2 {
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.services-details-tag span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6a6a6a;
+  padding-left: 65px;
+  position: relative;
+}
+.services-details-tag span::before {
+  position: absolute;
+  content: "";
+  background-color: #f15743;
+  height: 3px;
+  width: 45px;
+  left: 0;
+  top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.services-details-img img {
+  width: 100%;
+}
+.services-play-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.services-play-icon a {
+  font-size: 15px;
+  color: #f15743;
+  background: #ffffff;
+  height: 75px;
+  display: inline-block;
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  position: relative;
+}
+.services-play-icon a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  border-radius: inherit;
+  border: 1px solid #fff;
+  -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
+    infinite;
+  animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+  transition: 0.3s;
+}
+.mb-45 {
+  margin-bottom: 45px;
+}
+.services-details-info p {
+  margin-right: 35px;
+  margin-bottom: 0;
+}
+.faq-box .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  margin-bottom: 10px;
+}
+.faq-box .card-header {
+  padding: 0;
+  border-bottom: 0;
+  background: none;
+  border-radius: 0;
+}
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+.faq-box .btn-link {
+  display: block;
+  font-size: 18px;
+  border: 0;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 700;
+  padding: 24px 35px;
+  border: 2px solid #eaeaea;
+  color: #1e1e2a;
+}
+.faq-box .btn-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  font-family: "Font Awesome 5 Pro";
+  text-align: center;
+  top: 0;
+  font-weight: 400;
+  height: 70px;
+  width: 70px;
+  color: #ffffff;
+  background: -moz-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background: -ms-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  line-height: 70px;
+}
+.widget {
+  background-color: #fff;
+  border: 2px solid #f6f6f6;
+  border-top: 4px solid #f15743;
+}
+.service-details-list li {
+  margin-bottom: 5px;
+}
+.service-details-list li a {
+  background: #f3f1f2;
+  display: block;
+  padding: 19px 35px;
+  color: #1e1e2a;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.service-details-list li a::before {
+  content: "\f054";
+  display: inline-block;
+  padding-bottom: 0;
+  position: absolute;
+  top: 18px;
+  right: 35px;
+  font-family: fontAwesome;
+  color: #1e1e2a;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.widget-title {
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.ser-side-form input {
+  background: #f3f1f2;
+}
+.ser-side {
+  position: relative;
+}
+.ser-side-form input {
+  border: none;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 0 28px;
+  width: 100%;
+  font-size: 16px;
+  color: #6a6a6a;
+  font-weight: 500;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.ser-side::after {
+  position: absolute;
+  content: "";
+  font-family: fontAwesome;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  right: 25px;
+  color: #f15743;
+  top: 20px;
+}
+.s-name::after {
+  content: "\f007";
+}
+.s-email::after {
+  content: "\f2b6";
+}
+.s-sub::after {
+  content: "\f063";
+}
+.s-contact::after {
+  content: "\f0e0";
+}
+.ser-side-form textarea {
+  border: none;
+  height: 110px;
+  padding: 15px 28px;
+  width: 100%;
+  font-size: 16px;
+  color: #6a6a6a;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.ser-side-form input {
+  background: #f3f1f2;
+}
+.ser-side-form textarea {
+  background: #f3f1f2;
+}
+form .ser-button input.wpcf7-submit {
+  background: linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  background-image: -webkit-linear-gradient(-28deg, #f15245 0%, #ea3648 99%);
+  font-weight: 700;
+  color: #ffffff;
+  padding: 24px 33px;
+  height: auto;
+  margin-bottom: 0;
+}
+.widget {
+  padding: 36px 35px 40px;
+  background-color: #fff;
+}
+.widget_custom_html {
+  border: none;
+}
+.h-500 {
+  height: 500px !important;
+  object-fit: fill;
+}
+.h-300 {
+  height: 300px;
+}
