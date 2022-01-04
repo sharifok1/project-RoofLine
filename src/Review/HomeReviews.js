@@ -40,9 +40,9 @@ const HomeReviews = ({ rating }) => {
                                 borderRadius: "50%",
                                 marginTop: "-50px"
                             }} />
-                        <p>{name}</p>
-                        <p>{feedback}</p>
-                        <span>{ratin}</span>
+                        <p>hello</p>
+                        <p>not ok but work</p>
+                        <span>23.54</span>
                         <br />
                     </div>
                 </Carousel>
