@@ -97,13 +97,23 @@
 .mr-35 {
   margin-right: 25px;
 }
-.services-button .selected{
+.services-button .selected {
   background-color: cadetblue;
   width: 70px;
   height: 70px;
   border-radius: 5px;
 
-  color:#fff;
+  color: #fff;
+}
+.img-180 {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 @media only screen and (min-width: 300px) and (max-width: 991px) {
   .services-02-img {
