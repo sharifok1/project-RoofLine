@@ -8,15 +8,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import "./ManageAllOrders.css";
 import { CircularProgress } from "@mui/material";
-// import useAuth from "../../../Hooks/useAuth";
 
 export default function ManageAllOrders() {
-  // const [order, setOrder] = React.useState({});
-  // const { token } = useAuth();
   const [userOrders, setUserOrders] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   React.useEffect(() => {
-    fetch("http://localhost:5000.com/allBooking")
+    fetch("http://localhost:5000/allBooking")
       .then((res) => res.json())
       .then((data) => setUserOrders(data))
       .then(() => setIsLoading(false));
@@ -43,7 +40,7 @@ export default function ManageAllOrders() {
   const handleDeleteUserService = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     if (proceed) {
-      const url = `http://localhost:5000/order/${id}`;
+      const url = `http://localhost:5000/booking/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -103,10 +100,10 @@ export default function ManageAllOrders() {
                     </TableCell>
                     <TableCell align="center">{userOrder.email}</TableCell>
                     <TableCell align="center">
-                      {userOrder.product_Detail.product_name}
+                      {userOrder.product_Detail.name}
                     </TableCell>
                     <TableCell align="center">
-                      $ {userOrder.product_Detail.product_price}
+                      $ {userOrder.product_Detail.price}
                     </TableCell>
                     <TableCell align="center">{userOrder.location}</TableCell>
                     <TableCell align="center">

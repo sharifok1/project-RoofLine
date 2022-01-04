@@ -1,11 +1,12 @@
 import React from "react";
-import Review from "../../../Review/Review";
+
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
 import AboutDelivary from "../AboutDelivary/AboutDelivary";
 import AboutHistory from "../AboutHistory/AboutHistory";
 import AboutServices from "../AboutServices/AboutServices";
+import ReviewMain from "../ReviewMain/ReviewMain";
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
       <AboutDelivary />
       <AboutHistory />
       <AboutServices />
-      <Review />
+      <ReviewMain></ReviewMain>
       <Footer />
     </div>
   );
