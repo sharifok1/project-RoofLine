@@ -1,7 +1,19 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ServicesMainDetails = () => {
+const ServicesMainDetails = (props) => {
+  const {
+    _id,
+    name,
+    title,
+    details,
+    details2,
+    rating,
+    review,
+    img1,
+    img2,
+    img3,
+  } = props.product;
   return (
     <div>
       <div class="container">

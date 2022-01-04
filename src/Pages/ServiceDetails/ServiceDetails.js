@@ -85,7 +85,7 @@ const ServiceDetails = () => {
   return (
     <div>
       <ServicesDetailsBanner />
-      <ServicesMainDetails />
+      <ServicesMainDetails product={product} />
     </div>
   );
 };
