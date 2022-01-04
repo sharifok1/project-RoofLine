@@ -1,4 +1,5 @@
 import React from "react";
+import Review from "../../../Review/Review";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import AboutBanner from "../AboutBanner/AboutBanner";
@@ -14,6 +15,7 @@ const About = () => {
       <AboutDelivary />
       <AboutHistory />
       <AboutServices />
+      <Review />
       <Footer />
     </div>
   );

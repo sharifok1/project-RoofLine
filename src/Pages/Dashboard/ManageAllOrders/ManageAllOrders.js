@@ -22,7 +22,7 @@ export default function ManageAllOrders() {
       .then(() => setIsLoading(false));
   }, []);
   const handleUpdateUser = (id) => {
-    const url = `http://localhost:5000.com/booking/${id}`;
+    const url = `http://localhost:5000/booking/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -35,7 +35,7 @@ export default function ManageAllOrders() {
           alert("Update Successful");
         }
         console.log(data);
-        fetch("http://localhost:5000.com/allBooking")
+        fetch("http://localhost:5000/allBooking")
           .then((res) => res.json())
           .then((data) => setUserOrders(data));
       });
@@ -43,7 +43,7 @@ export default function ManageAllOrders() {
   const handleDeleteUserService = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     if (proceed) {
-      const url = `http://localhost:5000.com/booking/${id}`;
+      const url = `http://localhost:5000/order/${id}`;
       fetch(url, {
         method: "DELETE",
       })
