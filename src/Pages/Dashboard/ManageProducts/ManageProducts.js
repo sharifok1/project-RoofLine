@@ -3,16 +3,26 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ManageProducts.css";
 import StarIcon from "@mui/icons-material/AccessAlarm";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
 
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  // const product = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const fetchProducts = async () => {
+    const response = await axios
+      .get("http://localhost:5000/services")
+      .catch((err) => {
+        console.log("error", err);
+      });
+    setIsLoading(false);
+    dispatch(setProducts(response.data.result));
+  };
   useEffect(() => {
-    fetch("http://localhost:5000.com/services")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .then(() => setIsLoading(false));
-  }, []);
+    fetchProducts();
+  }, [!products]);
   const handleDeleteProduct = (id) => {
     const proceed = window.confirm("Are you sure, you want to delete?", id);
     console.log(id);
@@ -53,7 +63,7 @@ const ManageProducts = () => {
                     className="d-flex justify-content-center align-items-center"
                   >
                     <img
-                      src={singleProduct.image1}
+                      src={singleProduct.img1}
                       className="card-img img-fluid p-1"
                       alt="..."
                     />
@@ -71,18 +81,6 @@ const ManageProducts = () => {
                       readOnly
                     />
                   </div>
-                  {/* <div
-                    className="text-center py-2"
-                    style={{ backgroundColor: "#dbe3e3" }}
-                  >
-                    <Link
-                      className="fw-bold"
-                      style={{ textDecoration: "none", color: "goldenrod" }}
-                      to={`/details/${singleProduct._id}`}
-                    >
-                      <i className="fas fa-info-circle"></i> Detail
-                    </Link>
-                  </div> */}
                   <div
                     className="d-flex"
                     style={{ backgroundColor: "#dbe3e3" }}

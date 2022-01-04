@@ -5,44 +5,39 @@ import { Link } from "react-router-dom";
 
 const HomeServiceCard = () => {
   const products = useSelector((state) => state.allProducts.products);
-  const showAbleProducts = products.slice(0, 10);
+  const showAbleProducts = products.slice(0, 3);
   const renderList = showAbleProducts.map((product) => {
     const {
       _id,
-      product_name,
-      product_price,
-      brand,
-      sereen_size,
+      name,
+      title,
+      details,
+      details2,
       rating,
       review,
-      cpu,
-      detail,
-      image1,
+      img1,
+      img2,
+      img3,
     } = product;
+    console.log(product);
     return (
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="services-wrapper mb-30">
-          <div class="services-img">
+      <div className="col-xl-4 col-lg-4 col-md-6">
+        <div className="services-wrapper mb-30">
+          <div className="services-img">
             <a href="/">
-              <img
-                src="https://shtheme.org/demosd/roofline/wp-content/uploads/2021/06/02-1.jpg"
-                alt=""
-              />
+              <img className="img-fluid" src={img1} alt="" />
             </a>
-            <div class="services-icon">
+            <div className="services-icon">
               <a href="/">
-                <i class="fas fa-angle-double-right"></i>
+                <i className="fas fa-angle-double-right"></i>
               </a>
             </div>
           </div>
-          <div class="services-text text-center">
-            <h4>Roofing Cleaning</h4>
-            <p>
-              Sed perspicis unde omnis iste natus error voluptatem accusantium
-              doloreue laudantium totam rem aperiam{" "}
-            </p>
-            <div class="ser-icon">
-              <i class="flaticon-roof-2"></i>
+          <div className="services-text text-center">
+            <h4>{name}</h4>
+            <p>{title}</p>
+            <div className="ser-icon">
+              <i className="flaticon-roof-2"></i>
             </div>
           </div>
         </div>
