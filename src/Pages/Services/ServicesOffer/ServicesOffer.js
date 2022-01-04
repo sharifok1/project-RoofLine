@@ -53,11 +53,7 @@ const ServicesOffer = () => {
               <div className="services-button text-center mt-30">
                 {[...Array(getCount)?.keys()].map((number) => (
                   <button
-<<<<<<< HEAD
                     // class="c-btn"
-=======
-                    className="c-btn"
->>>>>>> 51c424eb4172183d6380e7bf6f71f098a9ce55b7
                     className={number === page ? "selected" : "c-btn"}
                     key={number}
                     onClick={() => setPage(number)}
