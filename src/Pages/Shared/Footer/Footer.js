@@ -117,8 +117,8 @@ const Footer = () => {
         </div>
         <div className="footerText">
           <p className="text-center mt-5">
-            © 2021 <span className="c-green">Roofline</span> Designd By{" "}
-            <span className="c-green">Md Bayazid & Shihab</span>.
+            © 2021 <span className="c-green">Roofline</span>build By{" "}
+            <span className="c-green">team32-SSBT</span>.
           </p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import SvgButton from "../SvgButton/SvgButton";
 import "./Header.css";
@@ -44,29 +44,24 @@ const Header = () => {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+              <div className="navbar-nav m-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink
-                    to="/"
+                  <NavLink to="/Home"
                     style={({ isActive }) => (isActive ? activeStyle : navLink)}
                   >
                     HOME
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    to="/about"
+                  <NavLink to="/About"
                     style={({ isActive }) => (isActive ? activeStyle : navLink)}
                   >
                     ABOUT
                   </NavLink>
-                  {/* <a className="nav-link" href="/about">
-                    ABOUT
-                  </a> */}
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/services"
+                    to="/Services"
                     style={({ isActive }) => (isActive ? activeStyle : navLink)}
                   >
                     SERVICE
@@ -74,7 +69,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/contact"
+                    to="/Contact"
                     style={({ isActive }) => (isActive ? activeStyle : navLink)}
                   >
                     CONTACT
@@ -89,7 +84,7 @@ const Header = () => {
                   </NavLink>
                   
                 </li>
-              </ul>
+              </div>
 
               {user.email ? (
                 <Box>
@@ -106,12 +101,12 @@ const Header = () => {
                   </SvgButton>
                 </Box>
               ) : (
-                <Link
+                <NavLink
                   style={{ color: "#f15743", textDecoration: "none" }}
                   to="/login"
                 >
                   <SvgButton className="banner-description">Login</SvgButton>
-                </Link>
+                </NavLink>
               )}
             </div>
           </div>
