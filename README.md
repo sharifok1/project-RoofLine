@@ -1,57 +1,82 @@
 # RoofLine
+
 ## Welcome to roofline
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link [RoofLine](https://roofline-df908.web.app/).
 
-## Available Scripts
+## All About This Project
 
-In the project directory, you can run:
+This project is based on laptop selling e-commerce. All the feathers of this project or website discussed down below:
 
-### `npm start`
+The important technologies that are used to make this project are:
+React-redux, React js, Firebase, MongoDB, Node js(for backend), Heroku, Material UI, Bootstrap and so on.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Home page`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In Home page there is a Navigation bar (header), banner, products, reviews and footer section. In products section it contain some of the products information for showing to the users.
 
-### `npm test`
+If user want to see the detail of the product he/she can click on the Detail button , that will take the user in a page where the user can see the detail of the product.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the review section all the reviews are shown in the UI. Also there are some extra section which are designed related with this project.
 
-### `npm run build`
+### `Services page`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the navigation another option Explore, that will take the user in another page which will show the user all the products.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All products have Detail button. So user can easily use this button as usual.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Service Detail & Booking page(purchase)`
 
-### `npm run eject`
+In this project website Detail of a specific product and booking a specific order is in the same page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+There is also a review section. So in this page user can easily purchase any product and give some review also.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `Login & Register page`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+User can login in this website both by google login and email-password login system.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If the user want to register so he/she can go to Register page to register.
 
-## Learn More
+### `Dashboard`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Dashboard page has two divisions one can only be accessible for the admin and another division is accessible for any user.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Dashboard for General Users
 
-### Code Splitting
+All the things an user can do in Dashboard page are:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. `My Orders`:
+   In `My Orders` section user can see all the orders that the user have booked or ordered. User can remove or unbooked his orders as well.
 
-### Analyzing the Bundle Size
+2. `Review`:
+   In `Review` section user can give feedback. User can rate by selecting star icon.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. `Pay`:
+   `Pay` section show coming soon by default.
 
-### Making a Progressive Web App
+There is another option that is `Logout`. User can use this button for logout.
+
+### Dashboard for Admin
+
+All the things an Admin can do in Dashboard page are:
+
+1. `Manage All Orders`:
+   In this section admin can see all the orders of all users. Admin can remove order.
+   There is a button called `pending`, if admin click the button it will become `shipped`.
+
+2. `Add A Product`:
+   In this section admin can add a new product by giving all product data.
+
+3. `Make Admin`:
+   In this section admin can make an user's role `admin` who is already registered in this website.
+
+4. `Manage Products`:
+   In this section user can see all the products that are posted in the database or website. Admin can remove products in this section.
+
+### `Carrier`
+
+This is a simple form page. If any one or any company want to work with this company they can fill the form and the data will go to the company database.
+
+There is another option that is `Logout`. Admin can use this button for logout.
+
+Thank You.
