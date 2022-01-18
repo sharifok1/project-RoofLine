@@ -1,4 +1,4 @@
-import { Rating } from "@mui/material";
+// import { Rating } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -30,15 +30,15 @@ const Service = () => {
   const renderList = products.map((product) => {
     const {
       _id,
-      name,
+      // name,
       title,
       details,
-      details2,
-      rating,
-      review,
+      // details2,
+      // rating,
+      // review,
       img1,
-      img2,
-      img3,
+      // img2,
+      // img3,
     } = product;
     // console.log(pageNumber);
     return (

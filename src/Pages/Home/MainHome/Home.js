@@ -3,7 +3,7 @@ import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import HomeAbout from "../HomeAbout/HomeAbout";
 import HomeBanner from "../HomeBanner/HomeBanner";
-import HomeBlogs from "../HomeBlogs/HomeBlogs";
+// import HomeBlogs from "../HomeBlogs/HomeBlogs";
 import HomeProjects from "../HomePojects/HomeProjects";
 import HomeProgress from "../HomeProgress/HomeProgress";
 import HomeServices from "../HomeServices/HomeServices";
